@@ -1,0 +1,8 @@
+POSITION: AI / ML Engineer (Copilot & RAG Specialist)
+
+REQUIREMENTS:
+- Education: Master's or Bachelor's degree in Computer Science, Artificial Intelligence, or related field.
+- Core Technical Stack: Hands-on experience with Python, PyTorch, LangChain, FAISS, and LLM Retrieval-Augmented Generation (RAG).
+- Skills: Vector database indexing, HuggingFace transformers, Docker containerization, REST API design (FastAPI).
+- Preferred Experience: Graph Neural Networks (GNNs), Computer Vision, ROS2 Robotics telemetry, PostgreSQL.
+- Responsibilities: Design, deploy, and benchmark production RAG pipelines with zero hallucination and high semantic retrieval precision.

@@ -1,0 +1,22 @@
+SHIVANGI SRIVASTAVA
+Email: goforshivangi@gmail.com | Phone: +1 (848) 315-8969 | Location: Newark, NJ
+LinkedIn: linkedin.com/in/shivangisrivastava013
+
+EDUCATION:
+- MS in Artificial Intelligence, New Jersey Institute of Technology (NJIT) | GPA: 3.8/4.0 (Sept 2025 - Dec 2026)
+- B.Tech in CSE (AI & ML), Manipal University Jaipur | GPA: 8.14/10 (Graduated July 2025)
+
+TECHNICAL SKILLS:
+- AI & Deep Learning: PyTorch, TensorFlow, LangChain, FAISS, Sentence-Transformers, HuggingFace, RAG, GNNs, SAM2, YOLO
+- Programming & DB: Python, C++, SQL, PostgreSQL, REST APIs, FastAPI, Docker, WSL2, CUDA, Git
+- Robotics & Systems: ROS2, Gazebo, Zenoh distributed telemetry
+
+EXPERIENCE:
+- Salesforce Intern (Salesforce x SmartInternz): Developed AI automation workflows and cloud integration scripts.
+- Machine Learning Intern (Suvidha Mahila Mandal): Implemented computer vision pipelines and data preprocessing models.
+- Training Intern (Cyber Secured India): Conducted cybersecurity threat analysis and secure coding audits.
+
+PROJECTS:
+1. AI Career RAG Assistant: Built vector embedding search using LangChain, Sentence-Transformers, and FAISS for resume-job matching.
+2. ShadowTag Invisible Watermarking: End-to-end Convolutional Autoencoder for image watermarking and attack recovery.
+3. ROS2 Autonomous Robot Navigation: Gazebo simulation with YOLO real-time object detection and Zenoh edge telemetry.
