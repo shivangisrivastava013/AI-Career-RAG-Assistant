@@ -1,0 +1,20 @@
+{
+  "job_id": "job_008",
+  "title": "Senior AI Systems Architect",
+  "company": "Enterprise AI Global",
+  "location": "New York, NY",
+  "description": "Responsibilities: Architect end-to-end enterprise AI products leveraging LLMs, RAG, vector search, and scalable microservices. Qualifications: 5+ years experience in Python, System Design, RAG, PyTorch, AWS, PostgreSQL, Docker. Preferred: Kubernetes.",
+  "source_url": "https://careers.enterpriseai.com/jobs/008",
+  "required_skills": [
+    "Python",
+    "System Design",
+    "RAG",
+    "PyTorch",
+    "AWS",
+    "PostgreSQL"
+  ],
+  "preferred_skills": [
+    "Kubernetes",
+    "FAISS"
+  ]
+}

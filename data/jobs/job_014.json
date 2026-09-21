@@ -1,0 +1,17 @@
+{
+  "job_id": "job_014",
+  "title": "Data Engineer - AI Pipelines",
+  "company": "OmniData Solutions",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Data Engineer - AI Pipelines. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, SQL, Spark / PySpark. Experience with Airflow, PostgreSQL.",
+  "source_url": "https://careers.example.com/jobs/job_014",
+  "required_skills": [
+    "Python",
+    "SQL",
+    "Spark / PySpark"
+  ],
+  "preferred_skills": [
+    "Airflow",
+    "PostgreSQL"
+  ]
+}

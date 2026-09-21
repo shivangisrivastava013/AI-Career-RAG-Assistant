@@ -1,0 +1,17 @@
+{
+  "job_id": "job_027",
+  "title": "Junior AI Developer",
+  "company": "LaunchPad AI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Junior AI Developer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, Scikit-Learn, Git / GitHub. Experience with SQL, REST API.",
+  "source_url": "https://careers.example.com/jobs/job_027",
+  "required_skills": [
+    "Python",
+    "Scikit-Learn",
+    "Git / GitHub"
+  ],
+  "preferred_skills": [
+    "SQL",
+    "REST API"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "job_id": "job_010",
+  "title": "Robotics Motion Control Software Engineer",
+  "company": "Kinematics Tech",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Robotics Motion Control Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in C++, Python, ROS 2. Experience with Gazebo, Control Systems.",
+  "source_url": "https://careers.example.com/jobs/job_010",
+  "required_skills": [
+    "C++",
+    "Python",
+    "ROS 2"
+  ],
+  "preferred_skills": [
+    "Gazebo",
+    "Control Systems"
+  ]
+}

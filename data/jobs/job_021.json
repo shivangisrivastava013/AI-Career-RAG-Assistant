@@ -1,0 +1,17 @@
+{
+  "job_id": "job_021",
+  "title": "Robotic Perception Software Specialist",
+  "company": "BotSense Inc",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Robotic Perception Software Specialist. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in ROS 2, Python, YOLO / Computer Vision. Experience with Gazebo, Docker.",
+  "source_url": "https://careers.example.com/jobs/job_021",
+  "required_skills": [
+    "ROS 2",
+    "Python",
+    "YOLO / Computer Vision"
+  ],
+  "preferred_skills": [
+    "Gazebo",
+    "Docker"
+  ]
+}

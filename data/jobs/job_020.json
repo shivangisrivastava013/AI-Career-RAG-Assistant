@@ -1,0 +1,17 @@
+{
+  "job_id": "job_020",
+  "title": "AI Security & Watermarking Researcher",
+  "company": "CyberGuard AI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for AI Security & Watermarking Researcher. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, PyTorch, TensorFlow. Experience with Cybersecurity, Autoencoders.",
+  "source_url": "https://careers.example.com/jobs/job_020",
+  "required_skills": [
+    "Python",
+    "PyTorch",
+    "TensorFlow"
+  ],
+  "preferred_skills": [
+    "Cybersecurity",
+    "Autoencoders"
+  ]
+}

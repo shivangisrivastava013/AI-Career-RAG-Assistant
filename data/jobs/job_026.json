@@ -1,0 +1,16 @@
+{
+  "job_id": "job_026",
+  "title": "Generative Multimodal AI Engineer",
+  "company": "OmniVision AI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Generative Multimodal AI Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in PyTorch, Transformers, Segment Anything (SAM). Experience with Diffusion Models.",
+  "source_url": "https://careers.example.com/jobs/job_026",
+  "required_skills": [
+    "PyTorch",
+    "Transformers",
+    "Segment Anything (SAM)"
+  ],
+  "preferred_skills": [
+    "Diffusion Models"
+  ]
+}

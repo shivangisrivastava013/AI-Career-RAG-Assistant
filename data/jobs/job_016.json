@@ -1,0 +1,17 @@
+{
+  "job_id": "job_016",
+  "title": "Computer Vision Algorithm Developer",
+  "company": "EdgeVision Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Computer Vision Algorithm Developer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in C++, Python, OpenCV. Experience with PyTorch, YOLO / Computer Vision.",
+  "source_url": "https://careers.example.com/jobs/job_016",
+  "required_skills": [
+    "C++",
+    "Python",
+    "OpenCV"
+  ],
+  "preferred_skills": [
+    "PyTorch",
+    "YOLO / Computer Vision"
+  ]
+}

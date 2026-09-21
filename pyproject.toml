@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag_assistant"
+version = "2.0.0"
+description = "Production-grade Retrieval-Augmented Generation & Career Matcher with FAISS"
+authors = [{ name = "Shivangi Srivastava", email = "goforshivangi@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sentence-transformers>=2.2.2",
+    "faiss-cpu>=1.7.4",
+    "pypdf>=3.9.0",
+    "python-docx>=0.8.11",
+    "pyyaml>=6.0",
+    "streamlit>=1.25.0",
+    "scikit-learn>=1.2.0"
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py310', 'py311']
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --strict-markers"

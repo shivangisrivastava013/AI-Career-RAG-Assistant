@@ -1,0 +1,16 @@
+{
+  "job_id": "job_029",
+  "title": "Computer Vision Software Engineer",
+  "company": "CamTech Solutions",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Computer Vision Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, OpenCV, PyTorch. Experience with C++.",
+  "source_url": "https://careers.example.com/jobs/job_029",
+  "required_skills": [
+    "Python",
+    "OpenCV",
+    "PyTorch"
+  ],
+  "preferred_skills": [
+    "C++"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "job_id": "job_024",
+  "title": "Deep Learning Engineer - Audio & Speech",
+  "company": "Soundwave AI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Deep Learning Engineer - Audio & Speech. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, PyTorch, Transformers. Experience with Audio Processing.",
+  "source_url": "https://careers.example.com/jobs/job_024",
+  "required_skills": [
+    "Python",
+    "PyTorch",
+    "Transformers"
+  ],
+  "preferred_skills": [
+    "Audio Processing"
+  ]
+}

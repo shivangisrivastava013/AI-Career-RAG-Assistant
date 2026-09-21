@@ -1,0 +1,16 @@
+{
+  "job_id": "job_019",
+  "title": "Applied Scientist - Graph Neural Networks",
+  "company": "NetworkAI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Applied Scientist - Graph Neural Networks. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in PyTorch, PyTorch Geometric, Graph Neural Networks. Experience with Python.",
+  "source_url": "https://careers.example.com/jobs/job_019",
+  "required_skills": [
+    "PyTorch",
+    "PyTorch Geometric",
+    "Graph Neural Networks"
+  ],
+  "preferred_skills": [
+    "Python"
+  ]
+}

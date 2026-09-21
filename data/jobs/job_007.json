@@ -1,0 +1,21 @@
+{
+  "job_id": "job_007",
+  "title": "MLOps & Data Platform Engineer",
+  "company": "Datastream AI",
+  "location": "Seattle, WA",
+  "description": "Responsibilities: Build automated CI/CD and MLOps deployment pipelines for deep learning models. Manage PostgreSQL databases, Redis caches, and Docker/Kubernetes clusters. Qualifications: Python, Docker, Kubernetes, CI/CD, PostgreSQL, Redis, AWS. Preferred: PySpark, MLflow.",
+  "source_url": "https://careers.datastream.com/jobs/007",
+  "required_skills": [
+    "Python",
+    "Docker",
+    "Kubernetes",
+    "PostgreSQL",
+    "CI/CD",
+    "AWS"
+  ],
+  "preferred_skills": [
+    "Redis",
+    "PySpark",
+    "MLflow"
+  ]
+}

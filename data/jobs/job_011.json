@@ -1,0 +1,17 @@
+{
+  "job_id": "job_011",
+  "title": "AI Research Scientist - Computer Vision",
+  "company": "Visionary Research",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for AI Research Scientist - Computer Vision. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in PyTorch, OpenCV, CUDA. Experience with Python, Deep Learning.",
+  "source_url": "https://careers.example.com/jobs/job_011",
+  "required_skills": [
+    "PyTorch",
+    "OpenCV",
+    "CUDA"
+  ],
+  "preferred_skills": [
+    "Python",
+    "Deep Learning"
+  ]
+}

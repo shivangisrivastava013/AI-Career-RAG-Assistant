@@ -1,0 +1,17 @@
+{
+  "job_id": "job_017",
+  "title": "Autonomous Navigation Systems Engineer",
+  "company": "DriveTech AI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Autonomous Navigation Systems Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in ROS 2, C++, Python. Experience with Gazebo, LiDAR.",
+  "source_url": "https://careers.example.com/jobs/job_017",
+  "required_skills": [
+    "ROS 2",
+    "C++",
+    "Python"
+  ],
+  "preferred_skills": [
+    "Gazebo",
+    "LiDAR"
+  ]
+}

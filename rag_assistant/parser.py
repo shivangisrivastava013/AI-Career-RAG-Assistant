@@ -1,98 +1,125 @@
 import re
 import os
-from typing import List, Dict
+import logging
+from typing import Dict, List, Any
+
+logger = logging.getLogger(__name__)
 
 
 class DocumentParser:
     """
-    Parses resume and job description documents, performing text cleaning,
-    section extraction, and semantic chunking.
+    Multi-format resume and job description parser supporting PDF, DOCX, and TXT files
+    with section identification and text normalization.
     """
 
     @staticmethod
     def clean_text(text: str) -> str:
         """
-        Cleans raw document text by stripping whitespace and removing special artifacts.
+        Normalizes line endings, whitespace, and removes non-printable characters.
         """
         if not text:
             return ""
-        # Remove extra whitespace and strange unicode symbols
+        text = re.sub(r'[\r\n\t]+', ' ', text)
         text = re.sub(r'\s+', ' ', text)
-        text = re.sub(r'[^\x00-\x7F]+', ' ', text)
         return text.strip()
 
-    @staticmethod
-    def extract_sections(text: str) -> Dict[str, str]:
+    @classmethod
+    def parse_file(cls, file_path: str) -> Dict[str, Any]:
         """
-        Extracts key resume sections (Skills, Education, Experience, Projects) using regex matching.
+        Parses document file by extension and returns structured text payload.
         """
-        sections = {
-            "skills": "",
-            "experience": "",
-            "education": "",
-            "projects": "",
-            "summary": ""
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"Target document not found at: {file_path}")
+
+        ext = os.path.splitext(file_path)[1].lower()
+
+        if ext == ".pdf":
+            raw_text = cls._parse_pdf(file_path)
+        elif ext == ".docx":
+            raw_text = cls._parse_docx(file_path)
+        elif ext in [".txt", ".json", ".md"]:
+            with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+                raw_text = f.read()
+        else:
+            raise ValueError(f"Unsupported document format '{ext}'. Supported formats: .pdf, .docx, .txt")
+
+        sections = cls.extract_sections(raw_text)
+
+        return {
+            "file_name": os.path.basename(file_path),
+            "file_path": file_path,
+            "raw_text": raw_text,
+            "clean_text": cls.clean_text(raw_text),
+            "sections": sections
         }
 
-        # Common headers
-        patterns = {
-            "skills": r'(?i)(skills|technical skills|technologies|expertise)(.*?)(experience|education|projects|work history|$)',
-            "experience": r'(?i)(experience|work experience|employment|history)(.*?)(education|projects|skills|$)',
-            "education": r'(?i)(education|academic background|degrees)(.*?)(experience|projects|skills|$)',
-            "projects": r'(?i)(projects|key projects|portfolio)(.*?)(experience|education|skills|$)'
-        }
-
-        for sec, pattern in patterns.items():
-            match = re.search(pattern, text)
-            if match:
-                sections[sec] = DocumentParser.clean_text(match.group(2))
-
-        if not any(sections.values()):
-            sections["summary"] = DocumentParser.clean_text(text)
-
-        return sections
+    @staticmethod
+    def _parse_pdf(file_path: str) -> str:
+        """
+        Extracts plain text from PDF using pypdf.
+        """
+        try:
+            from pypdf import PdfReader
+            reader = PdfReader(file_path)
+            pages_text = []
+            for i, page in enumerate(reader.pages):
+                text = page.extract_text() or ""
+                pages_text.append(text)
+            return "\n".join(pages_text)
+        except Exception as e:
+            logger.error(f"Error parsing PDF '{file_path}': {e}")
+            raise RuntimeError(f"Could not extract text from PDF: {e}") from e
 
     @staticmethod
-    def chunk_text(text: str, chunk_size: int = 256, chunk_overlap: int = 32) -> List[str]:
+    def _parse_docx(file_path: str) -> str:
         """
-        Splits long text into overlapping chunks for vector embedding index insertion.
+        Extracts plain text from DOCX using python-docx.
         """
-        words = text.split()
-        if len(words) <= chunk_size:
-            return [text]
-
-        chunks = []
-        i = 0
-        while i < len(words):
-            chunk = " ".join(words[i:i + chunk_size])
-            chunks.append(chunk)
-            i += (chunk_size - chunk_overlap)
-
-        return chunks
+        try:
+            import docx
+            doc = docx.Document(file_path)
+            full_text = [p.text for p in doc.paragraphs if p.text.strip()]
+            return "\n".join(full_text)
+        except Exception as e:
+            logger.error(f"Error parsing DOCX '{file_path}': {e}")
+            raise RuntimeError(f"Could not extract text from DOCX: {e}") from e
 
     @classmethod
-    def load_file(cls, filepath: str) -> str:
+    def extract_sections(cls, text: str) -> Dict[str, str]:
         """
-        Loads document from TXT or PDF file path.
+        Parses raw text into standard resume / JD sections using structural heading regex.
         """
-        if not os.path.exists(filepath):
-            raise FileNotFoundError(f"File not found: {filepath}")
+        section_headers = {
+            "summary": r"(?:summary|objective|profile|about\s+me)",
+            "experience": r"(?:experience|work\s+history|employment|professional\s+experience)",
+            "education": r"(?:education|academic\s+background|degrees)",
+            "skills": r"(?:skills|technical\s+skills|core\s+competencies|technologies)",
+            "projects": r"(?:projects|key\s+projects|featured\s+work)",
+            "certifications": r"(?:certifications|licenses|credentials|courses)"
+        }
 
-        ext = os.path.splitext(filepath)[1].lower()
-        if ext in ['.txt', '.md']:
-            with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-                return f.read()
-        elif ext == '.pdf':
-            try:
-                import pypdf
-                reader = pypdf.PdfReader(filepath)
-                text = ""
-                for page in reader.pages:
-                    text += page.extract_text() + "\n"
-                return text
-            except ImportError:
-                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-                    return f.read()
-        else:
-            with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-                return f.read()
+        sections: Dict[str, str] = {sec: "" for sec in section_headers}
+        sections["general"] = ""
+
+        # Split text by line blocks
+        lines = [line.strip() for line in text.split("\n") if line.strip()]
+        current_section = "general"
+        buf: Dict[str, List[str]] = {sec: [] for sec in sections}
+
+        for line in lines:
+            line_lower = line.lower()
+            matched_sec = None
+            for sec, pattern in section_headers.items():
+                if re.match(r"^#*\s*" + pattern + r"\b", line_lower):
+                    matched_sec = sec
+                    break
+
+            if matched_sec:
+                current_section = matched_sec
+            else:
+                buf[current_section].append(line)
+
+        for sec in sections:
+            sections[sec] = " ".join(buf[sec]).strip()
+
+        return sections

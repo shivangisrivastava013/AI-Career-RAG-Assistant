@@ -1,0 +1,21 @@
+{
+  "job_id": "job_004",
+  "title": "Autonomous Robotics Perception & Navigation Engineer",
+  "company": "Nova Robotics Inc.",
+  "location": "Newark, NJ",
+  "description": "Responsibilities: Build autonomous TurtleBot perception and trajectory navigation packages in ROS 2. Integrate Zenoh telemetry streaming and real-time Gazebo simulations. Qualifications: ROS 2, Python, C++, Gazebo, Docker, Linux. Preferred: 3D Gaussian Splatting and COLMAP.",
+  "source_url": "https://careers.novarobotics.com/jobs/004",
+  "required_skills": [
+    "Python",
+    "C++",
+    "ROS 2",
+    "Gazebo",
+    "Docker",
+    "Linux"
+  ],
+  "preferred_skills": [
+    "Zenoh",
+    "3D Gaussian Splatting",
+    "PostgreSQL"
+  ]
+}

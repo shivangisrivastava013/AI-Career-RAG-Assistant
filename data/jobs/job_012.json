@@ -1,0 +1,17 @@
+{
+  "job_id": "job_012",
+  "title": "Senior Applied NLP Engineer",
+  "company": "TextMetrics Inc",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Senior Applied NLP Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, Transformers, NLP. Experience with FastAPI, PostgreSQL.",
+  "source_url": "https://careers.example.com/jobs/job_012",
+  "required_skills": [
+    "Python",
+    "Transformers",
+    "NLP"
+  ],
+  "preferred_skills": [
+    "FastAPI",
+    "PostgreSQL"
+  ]
+}

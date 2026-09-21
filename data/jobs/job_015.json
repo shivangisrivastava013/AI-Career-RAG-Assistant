@@ -1,0 +1,17 @@
+{
+  "job_id": "job_015",
+  "title": "Full Stack AI Software Engineer",
+  "company": "SmartApps Corp",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Full Stack AI Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, TypeScript, React. Experience with FastAPI, Docker.",
+  "source_url": "https://careers.example.com/jobs/job_015",
+  "required_skills": [
+    "Python",
+    "TypeScript",
+    "React"
+  ],
+  "preferred_skills": [
+    "FastAPI",
+    "Docker"
+  ]
+}

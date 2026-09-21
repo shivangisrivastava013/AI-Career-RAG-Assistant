@@ -1,0 +1,17 @@
+{
+  "job_id": "job_030",
+  "title": "MLOps Infrastructure Specialist",
+  "company": "CloudDeploy AI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for MLOps Infrastructure Specialist. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Docker, Kubernetes, CI/CD. Experience with Python, Terraform.",
+  "source_url": "https://careers.example.com/jobs/job_030",
+  "required_skills": [
+    "Docker",
+    "Kubernetes",
+    "CI/CD"
+  ],
+  "preferred_skills": [
+    "Python",
+    "Terraform"
+  ]
+}

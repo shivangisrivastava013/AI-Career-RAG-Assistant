@@ -1,0 +1,17 @@
+{
+  "job_id": "job_013",
+  "title": "Generative AI Solutions Architect",
+  "company": "CloudAI Partners",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Generative AI Solutions Architect. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, RAG, LangChain. Experience with Vector Databases, AWS.",
+  "source_url": "https://careers.example.com/jobs/job_013",
+  "required_skills": [
+    "Python",
+    "RAG",
+    "LangChain"
+  ],
+  "preferred_skills": [
+    "Vector Databases",
+    "AWS"
+  ]
+}

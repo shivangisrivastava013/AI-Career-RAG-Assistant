@@ -1,0 +1,12 @@
+{
+  "ground_truth_skills": {
+    "sample_resume.txt": [
+      "Python", "C++", "PyTorch", "TensorFlow", "Scikit-Learn", "OpenCV",
+      "PyTorch Geometric", "CUDA", "Retrieval-Augmented Generation (RAG)",
+      "Sentence Transformers", "FAISS", "Vector Databases", "Transformers",
+      "LangChain", "Large Language Models (LLMs)", "ROS 2", "Gazebo",
+      "YOLO / Computer Vision", "Segment Anything (SAM)", "3D Gaussian Splatting",
+      "COLMAP", "Docker", "PostgreSQL", "SQL", "Git / GitHub", "Linux", "FastAPI"
+    ]
+  }
+}

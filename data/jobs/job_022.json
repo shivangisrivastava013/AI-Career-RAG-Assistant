@@ -1,0 +1,17 @@
+{
+  "job_id": "job_022",
+  "title": "Lead AI Search & Information Retrieval Engineer",
+  "company": "FindIT AI",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Lead AI Search & Information Retrieval Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in RAG, FAISS, Python. Experience with Elasticsearch, Sentence Transformers.",
+  "source_url": "https://careers.example.com/jobs/job_022",
+  "required_skills": [
+    "RAG",
+    "FAISS",
+    "Python"
+  ],
+  "preferred_skills": [
+    "Elasticsearch",
+    "Sentence Transformers"
+  ]
+}

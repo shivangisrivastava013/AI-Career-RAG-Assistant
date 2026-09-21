@@ -1,0 +1,18 @@
+{
+  "job_id": "job_028",
+  "title": "Staff AI Engineer - Enterprise Search",
+  "company": "Apex Search",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Staff AI Engineer - Enterprise Search. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, RAG, FAISS. Experience with Vector Databases, PostgreSQL, Docker.",
+  "source_url": "https://careers.example.com/jobs/job_028",
+  "required_skills": [
+    "Python",
+    "RAG",
+    "FAISS"
+  ],
+  "preferred_skills": [
+    "Vector Databases",
+    "PostgreSQL",
+    "Docker"
+  ]
+}

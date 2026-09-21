@@ -1,0 +1,17 @@
+{
+  "job_id": "job_023",
+  "title": "ML Optimization & Quantization Engineer",
+  "company": "TensorCore",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for ML Optimization & Quantization Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in PyTorch, CUDA, TensorRT. Experience with C++, Python.",
+  "source_url": "https://careers.example.com/jobs/job_023",
+  "required_skills": [
+    "PyTorch",
+    "CUDA",
+    "TensorRT"
+  ],
+  "preferred_skills": [
+    "C++",
+    "Python"
+  ]
+}

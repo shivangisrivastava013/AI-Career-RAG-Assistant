@@ -1,0 +1,22 @@
+{
+  "job_id": "job_001",
+  "title": "Machine Learning Engineer - RAG & Applied AI",
+  "company": "Cognitive AI Systems",
+  "location": "New York, NY (Hybrid)",
+  "description": "Responsibilities: Design, build, and deploy production-grade Retrieval-Augmented Generation (RAG) pipelines using Sentence Transformers, FAISS, and LangChain. Optimize vector database indexing and search latency for large document corpora. Qualifications: 2+ years of production PyTorch experience. Strong knowledge of PostgreSQL, Vector Databases, Docker, and REST APIs. Preferred: Experience with ROS 2 and Gazebo simulation.",
+  "source_url": "https://careers.cognitiveai.com/jobs/001",
+  "required_skills": [
+    "Python",
+    "PyTorch",
+    "RAG",
+    "FAISS",
+    "Vector Databases",
+    "Docker",
+    "PostgreSQL"
+  ],
+  "preferred_skills": [
+    "LangChain",
+    "ROS 2",
+    "AWS"
+  ]
+}

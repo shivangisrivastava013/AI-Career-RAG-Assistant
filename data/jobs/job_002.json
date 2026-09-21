@@ -1,0 +1,22 @@
+{
+  "job_id": "job_002",
+  "title": "Computer Vision & Visual Perception Engineer",
+  "company": "Apex Vision Robotics",
+  "location": "San Francisco, CA",
+  "description": "Responsibilities: Develop real-time object detection and visual segmentation pipelines combining YOLOv8 and Segment Anything (SAM 2). Implement zero-shot visual perception and CUDA acceleration on edge devices. Qualifications: Strong Python and C++ experience. PyTorch, OpenCV, Docker, and CUDA experience. Preferred: ROS 2 integration experience.",
+  "source_url": "https://careers.apexvision.com/jobs/002",
+  "required_skills": [
+    "Python",
+    "C++",
+    "PyTorch",
+    "OpenCV",
+    "CUDA",
+    "YOLO / Computer Vision",
+    "Docker"
+  ],
+  "preferred_skills": [
+    "Segment Anything (SAM)",
+    "ROS 2",
+    "TensorRT"
+  ]
+}

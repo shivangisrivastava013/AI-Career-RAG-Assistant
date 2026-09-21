@@ -1,0 +1,17 @@
+{
+  "job_id": "job_009",
+  "title": "ML Engineer - LLM Infrastructure",
+  "company": "DataCore Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for ML Engineer - LLM Infrastructure. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, PyTorch, Transformers. Experience with Docker, AWS.",
+  "source_url": "https://careers.example.com/jobs/job_009",
+  "required_skills": [
+    "Python",
+    "PyTorch",
+    "Transformers"
+  ],
+  "preferred_skills": [
+    "Docker",
+    "AWS"
+  ]
+}

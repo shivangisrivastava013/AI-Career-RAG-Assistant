@@ -1,0 +1,21 @@
+# AI Career RAG Assistant - Transparent 5-Component Scoring Matrix Configuration
+
+scoring_weights:
+  required_skills: 0.40       # Coverage of mandatory technical skills
+  responsibilities: 0.25      # Semantic similarity to core role responsibilities
+  experience_level: 0.15      # Alignment with years of experience / seniority
+  education_level: 0.10       # Degree level requirement alignment
+  preferred_skills: 0.10      # Bonus coverage of optional / preferred skills
+
+thresholds:
+  strong_match: 0.75
+  moderate_match: 0.55
+  low_match: 0.35
+
+chunking:
+  chunk_size: 300
+  chunk_overlap: 50
+
+retrieval:
+  top_k_chunks: 5
+  similarity_metric: "cosine"

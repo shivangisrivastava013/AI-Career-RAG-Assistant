@@ -1,0 +1,17 @@
+{
+  "job_id": "job_025",
+  "title": "Robotics Simulation Engineer",
+  "company": "SimuRobot Technologies",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Robotics Simulation Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in ROS 2, Gazebo, C++. Experience with Python, Docker.",
+  "source_url": "https://careers.example.com/jobs/job_025",
+  "required_skills": [
+    "ROS 2",
+    "Gazebo",
+    "C++"
+  ],
+  "preferred_skills": [
+    "Python",
+    "Docker"
+  ]
+}

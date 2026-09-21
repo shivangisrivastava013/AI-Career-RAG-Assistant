@@ -1,0 +1,22 @@
+{
+  "benchmark_queries": [
+    {
+      "query_id": "q_001",
+      "resume_file": "sample_resume.txt",
+      "relevant_job_ids": ["job_001", "job_005", "job_008", "job_014", "job_018"],
+      "top1_job_id": "job_001"
+    },
+    {
+      "query_id": "q_002",
+      "resume_file": "sample_resume.pdf",
+      "relevant_job_ids": ["job_001", "job_005", "job_014", "job_018", "job_022"],
+      "top1_job_id": "job_001"
+    },
+    {
+      "query_id": "q_003",
+      "resume_file": "sample_resume.docx",
+      "relevant_job_ids": ["job_002", "job_004", "job_006", "job_010", "job_021"],
+      "top1_job_id": "job_004"
+    }
+  ]
+}

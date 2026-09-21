@@ -1,0 +1,17 @@
+{
+  "job_id": "job_018",
+  "title": "Machine Learning Platform Developer",
+  "company": "ScaleML Labs",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and scale production systems for Machine Learning Platform Developer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, Docker, Kubernetes. Experience with MLflow, CI/CD.",
+  "source_url": "https://careers.example.com/jobs/job_018",
+  "required_skills": [
+    "Python",
+    "Docker",
+    "Kubernetes"
+  ],
+  "preferred_skills": [
+    "MLflow",
+    "CI/CD"
+  ]
+}
