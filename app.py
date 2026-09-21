@@ -1,6 +1,7 @@
 import json
 import os
 import tempfile
+import time
 
 import streamlit as st
 
@@ -35,10 +36,20 @@ st.markdown(
 
 
 def load_artifacts(artifacts_dir="artifacts", allow_fallback=True):
+    embedder = VectorStoreManager(allow_fallback=allow_fallback)
     vstore = PersistentFAISSVectorStore()
     if os.path.exists(os.path.join(artifacts_dir, "job_metadata.json")):
-        vstore.load(artifacts_dir, expected_encoder=None)
-    embedder = VectorStoreManager(allow_fallback=allow_fallback)
+        try:
+            vstore.load(artifacts_dir, expected_encoder=embedder.model_used)
+        except ValueError as e:
+            st.warning(
+                f"⚠️ **Vector Store Encoder Mismatch Detected**: {e}\n\n"
+                f"Automatically rebuilding vector index with active model (`{embedder.model_used}`)..."
+            )
+            from rag_assistant.index_jobs import build_index
+
+            build_index("data/jobs", artifacts_dir, allow_fallback=allow_fallback)
+            vstore.load(artifacts_dir, expected_encoder=embedder.model_used)
     return vstore, embedder
 
 
@@ -264,10 +275,61 @@ def main():
                     new_vstore.add_chunks(all_chunks, embeddings)
                     new_vstore.save(artifacts_dir)
 
-                    st.success(
-                        f"Successfully indexed {len(jobs)} synthetic jobs ({len(all_chunks)} chunks) into FAISS!"
-                    )
+                    st.success(f"Successfully indexed {len(jobs)} jobs ({len(all_chunks)} chunks) into FAISS!")
                     st.rerun()
+
+        st.divider()
+        with st.expander("📝 Add Custom Job Description (Paste & Index Immediately)", expanded=False):
+            with st.form("custom_job_form"):
+                c_title = st.text_input("Job Title", placeholder="e.g., Applied AI Engineer")
+                c_company = st.text_input("Company", placeholder="e.g., Anthropic")
+                c_loc = st.text_input("Location", value="Remote")
+                c_desc = st.text_area(
+                    "Full Job Description", height=150, placeholder="Paste complete job description text here..."
+                )
+                c_req = st.text_input("Required Skills (comma-separated)", placeholder="Python, PyTorch, RAG, Docker")
+                c_pref = st.text_input("Preferred Skills (comma-separated)", placeholder="AWS, LangChain, CUDA")
+
+                submitted = st.form_submit_button("➕ Save Job & Rebuild Index")
+                if submitted:
+                    if not c_title or not c_desc:
+                        st.error("Please provide both Job Title and Description.")
+                    else:
+                        job_id = f"job_custom_{int(time.time())}"
+                        new_job = {
+                            "job_id": job_id,
+                            "title": c_title,
+                            "company": c_company or "Unknown Company",
+                            "location": c_loc,
+                            "description": c_desc,
+                            "source_url": None,
+                            "synthetic": False,
+                            "required_skills": [s.strip() for s in c_req.split(",") if s.strip()],
+                            "preferred_skills": [s.strip() for s in c_pref.split(",") if s.strip()],
+                        }
+                        out_path = os.path.join(jobs_dir, f"{job_id}.json")
+                        with open(out_path, "w", encoding="utf-8") as f:
+                            json.dump(new_job, f, indent=2)
+
+                        st.success(f"Saved custom job file to `{out_path}`!")
+                        with st.spinner("Rebuilding FAISS index with new job..."):
+                            jobs = JobCorpusIngestor.load_corpus(jobs_dir)
+                            chunker = SectionAwareChunker()
+                            all_chunks = []
+                            for j in jobs:
+                                all_chunks.extend(chunker.chunk_job_description(j))
+                            texts = [c["text"] for c in all_chunks]
+                            embeddings = embedder.encode(texts)
+                            new_vstore = PersistentFAISSVectorStore(
+                                dimension=embeddings.shape[1] if len(embeddings) > 0 else 384,
+                                encoder_model=embedder.model_used,
+                            )
+                            new_vstore.add_chunks(all_chunks, embeddings)
+                            new_vstore.save(artifacts_dir)
+                            st.success(
+                                f"FAISS index updated! Total indexed jobs: {len(jobs)} ({len(all_chunks)} chunks)."
+                            )
+                            st.rerun()
 
     # TAB 3: SKILL GAP MATRIX
     with tab3:

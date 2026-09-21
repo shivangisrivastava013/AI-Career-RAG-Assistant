@@ -34,16 +34,18 @@ def main():
     resume_data = DocumentParser.parse_file(args.resume)
     resume_text = resume_data["clean_text"]
 
+    logger.info(f"Initializing embedding model (allow_fallback={args.allow_fallback})...")
+    embedder = VectorStoreManager(allow_fallback=args.allow_fallback)
+
     logger.info(f"Loading persistent FAISS vector store from '{args.artifacts}'...")
     vstore = PersistentFAISSVectorStore()
     try:
-        vstore.load(args.artifacts, expected_encoder=None)
+        vstore.load(args.artifacts, expected_encoder=embedder.model_used)
     except Exception as e:
         logger.error(f"Could not load vector store from '{args.artifacts}': {e}")
-        logger.info("Please run 'python -m rag_assistant.index_jobs' first to index the job corpus.")
+        logger.info("Please run 'python -m rag_assistant.index_jobs' to index the job corpus with the active encoder.")
         sys.exit(1)
 
-    embedder = VectorStoreManager(allow_fallback=args.allow_fallback)
     retriever = SemanticJobRetriever(vstore, embedder)
 
     # Two-Stage Retrieval: Stage 1 candidate jobs

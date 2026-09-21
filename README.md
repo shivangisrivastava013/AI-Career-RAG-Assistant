@@ -23,7 +23,7 @@ flowchart TD
     G --> H
     H --> I["Configurable 5-Component Matrix Scorer"]
     H --> J["Citation-Grounded Recommendation Engine"]
-    J --> K["Streamlit UI & JSON/PDF Report Exporter"]
+    J --> K["Streamlit UI & JSON Report Exporter"]
 ```
 
 ---
@@ -45,17 +45,18 @@ flowchart TD
      - **Education Alignment**: 10%
      - **Preferred Skill Coverage**: 10%
 
-4. **Grounded LLM & Citation Safeguards**:
-   - Synthesizes actionable resume recommendations and interview topics.
+4. **Citation-Grounded Recommendations & Safeguards**:
+   - Synthesizes actionable resume recommendations and interview preparation topics using template-based heuristic engines.
    - Every recommendation MUST cite a specific retrieved job requirement chunk (`chunk_id`).
-   - Anti-hallucination safeguard: never recommends adding non-existent experience to a resume.
+   - Anti-hallucination safeguard: strictly prevents advising candidates to add non-existent experience.
 
 5. **Strict Model Integrity & Explicit Fallback**:
    - Neural transformer loading failures raise an explicit `RuntimeError` unless `--allow-fallback` / `allow_fallback=True` is passed.
+   - Vector store loading enforces `expected_encoder` validation and auto-rebuilds on model mismatch.
    - Fallback encoding utilizes stable `SHA-256` digest hashing (replacing Python's non-seeded `hash()`).
 
 6. **Interactive Streamlit Web UI**:
-   - 5 interactive tabs for Resume Matching, Job Corpus Indexing, Categorized Skill Gap Inspection, Grounded Recommendations with Citations, and JSON/PDF Report Export.
+   - 5 interactive tabs for Resume Matching, Job Corpus Indexing & Direct Custom Job Pasting, Categorized Skill Gap Inspection, Citation-Grounded Recommendations, and JSON Report Export.
 
 ---
 
