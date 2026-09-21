@@ -3,20 +3,62 @@
     {
       "query_id": "q_001",
       "resume_file": "sample_resume.txt",
-      "relevant_job_ids": ["job_001", "job_005", "job_008", "job_014", "job_018"],
-      "top1_job_id": "job_001"
+      "relevant_job_ids": ["job_001", "job_006", "job_011", "job_026", "job_036", "job_041"],
+      "top1_job_id": "job_006"
     },
     {
       "query_id": "q_002",
-      "resume_file": "sample_resume.pdf",
-      "relevant_job_ids": ["job_001", "job_005", "job_014", "job_018", "job_022"],
+      "resume_file": "resume_ml_engineer.txt",
+      "relevant_job_ids": ["job_001", "job_002", "job_003", "job_004", "job_005"],
       "top1_job_id": "job_001"
     },
     {
       "query_id": "q_003",
-      "resume_file": "sample_resume.docx",
-      "relevant_job_ids": ["job_002", "job_004", "job_006", "job_010", "job_021"],
-      "top1_job_id": "job_004"
+      "resume_file": "resume_ai_engineer.txt",
+      "relevant_job_ids": ["job_006", "job_007", "job_008", "job_009", "job_010"],
+      "top1_job_id": "job_006"
+    },
+    {
+      "query_id": "q_004",
+      "resume_file": "resume_data_scientist.txt",
+      "relevant_job_ids": ["job_011", "job_012", "job_013", "job_014", "job_015"],
+      "top1_job_id": "job_011"
+    },
+    {
+      "query_id": "q_005",
+      "resume_file": "resume_data_engineer.txt",
+      "relevant_job_ids": ["job_016", "job_017", "job_018", "job_019", "job_020"],
+      "top1_job_id": "job_016"
+    },
+    {
+      "query_id": "q_006",
+      "resume_file": "resume_mlops_engineer.txt",
+      "relevant_job_ids": ["job_021", "job_022", "job_023", "job_024", "job_025"],
+      "top1_job_id": "job_021"
+    },
+    {
+      "query_id": "q_007",
+      "resume_file": "resume_cv_engineer.txt",
+      "relevant_job_ids": ["job_026", "job_027", "job_028", "job_029", "job_030"],
+      "top1_job_id": "job_026"
+    },
+    {
+      "query_id": "q_008",
+      "resume_file": "resume_nlp_engineer.txt",
+      "relevant_job_ids": ["job_031", "job_032", "job_033", "job_034", "job_035"],
+      "top1_job_id": "job_031"
+    },
+    {
+      "query_id": "q_009",
+      "resume_file": "resume_robotics_engineer.txt",
+      "relevant_job_ids": ["job_036", "job_037", "job_038", "job_039", "job_040"],
+      "top1_job_id": "job_036"
+    },
+    {
+      "query_id": "q_010",
+      "resume_file": "resume_genai_engineer.txt",
+      "relevant_job_ids": ["job_041", "job_042", "job_043", "job_044", "job_045"],
+      "top1_job_id": "job_041"
     }
   ]
 }

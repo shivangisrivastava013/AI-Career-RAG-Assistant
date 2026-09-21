@@ -2,481 +2,2001 @@
   {
     "chunk_id": "job_001_chunk_0",
     "job_id": "job_001",
-    "title": "Machine Learning Engineer - RAG & Applied AI",
-    "company": "Cognitive AI Systems",
+    "title": "Machine Learning Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, build, and deploy production-grade Retrieval-Augmented Generation (RAG) pipelines using Sentence Transformers, FAISS, and LangChain. Optimize vector database indexing and search latency for large document corpora."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Machine Learning Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_001_chunk_1",
     "job_id": "job_001",
-    "title": "Machine Learning Engineer - RAG & Applied AI",
-    "company": "Cognitive AI Systems",
+    "title": "Machine Learning Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Qualifications",
-    "text": "Qualifications: 2+ years of production PyTorch experience. Strong knowledge of PostgreSQL, Vector Databases, Docker, and REST APIs. Preferred: Experience with ROS 2 and Gazebo simulation."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Scikit-Learn. Production experience with Docker, PostgreSQL. Preferred: Familiarity with AWS, MLflow, CI/CD.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_002_chunk_0",
     "job_id": "job_002",
-    "title": "Computer Vision & Visual Perception Engineer",
-    "company": "Apex Vision Robotics",
+    "title": "Machine Learning Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Develop real-time object detection and visual segmentation pipelines combining YOLOv8 and Segment Anything (SAM 2). Implement zero-shot visual perception and CUDA acceleration on edge devices."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Machine Learning Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_002_chunk_1",
     "job_id": "job_002",
-    "title": "Computer Vision & Visual Perception Engineer",
-    "company": "Apex Vision Robotics",
+    "title": "Machine Learning Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Strong Python and C++ experience. PyTorch, OpenCV, Docker, and CUDA experience. Preferred: ROS 2 integration experience."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Scikit-Learn. Production experience with Docker, PostgreSQL. Preferred: Familiarity with AWS, MLflow, CI/CD.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_003_chunk_0",
     "job_id": "job_003",
-    "title": "Graph Machine Learning Research Engineer",
-    "company": "GraphNet Labs",
+    "title": "Machine Learning Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Benchmark and scale Graph Neural Network (GCN, GraphSAGE) architectures for node classification and citation networks. Implement graph embeddings using PyTorch Geometric."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Machine Learning Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_003_chunk_1",
     "job_id": "job_003",
-    "title": "Graph Machine Learning Research Engineer",
-    "company": "GraphNet Labs",
+    "title": "Machine Learning Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Qualifications",
-    "text": "Qualifications: MS or PhD in Computer Science or AI. PyTorch, PyTorch Geometric, Python, SQL. Preferred: Scikit-Learn and Docker."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Scikit-Learn. Production experience with Docker, PostgreSQL. Preferred: Familiarity with AWS, MLflow, CI/CD.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_004_chunk_0",
     "job_id": "job_004",
-    "title": "Autonomous Robotics Perception & Navigation Engineer",
-    "company": "Nova Robotics Inc.",
+    "title": "Machine Learning Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Build autonomous TurtleBot perception and trajectory navigation packages in ROS 2. Integrate Zenoh telemetry streaming and real-time Gazebo simulations."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Machine Learning Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_004_chunk_1",
     "job_id": "job_004",
-    "title": "Autonomous Robotics Perception & Navigation Engineer",
-    "company": "Nova Robotics Inc.",
+    "title": "Machine Learning Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Qualifications",
-    "text": "Qualifications: ROS 2, Python, C++, Gazebo, Docker, Linux. Preferred: 3D Gaussian Splatting and COLMAP."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Scikit-Learn. Production experience with Docker, PostgreSQL. Preferred: Familiarity with AWS, MLflow, CI/CD.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_005_chunk_0",
     "job_id": "job_005",
-    "title": "NLP & Generative AI Engineer",
-    "company": "Synthetix AI",
+    "title": "Machine Learning Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Build abstractive and extractive text summarization engines using HuggingFace Transformers and LLMs. Implement fine-tuning pipelines for domain-specific text generation."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Machine Learning Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_005_chunk_1",
     "job_id": "job_005",
-    "title": "NLP & Generative AI Engineer",
-    "company": "Synthetix AI",
+    "title": "Machine Learning Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Python, PyTorch, Transformers, HuggingFace, FastAPI, REST API. Preferred: LangChain, Vector Databases."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Scikit-Learn. Production experience with Docker, PostgreSQL. Preferred: Familiarity with AWS, MLflow, CI/CD.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Scikit-Learn",
+      "Docker",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "MLflow",
+      "CI/CD"
+    ]
   },
   {
     "chunk_id": "job_006_chunk_0",
     "job_id": "job_006",
-    "title": "3D Neural Rendering & Spatial AI Engineer",
-    "company": "SpatialVerse Systems",
+    "title": "Applied AI Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Implement 3D Gaussian Splatting and neural rendering pipelines for indoor environment reconstruction. Translate Polycam captures into COLMAP camera poses."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_006_chunk_1",
     "job_id": "job_006",
-    "title": "3D Neural Rendering & Spatial AI Engineer",
-    "company": "SpatialVerse Systems",
+    "title": "Applied AI Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Python, PyTorch, COLMAP, 3D Gaussian Splatting, OpenCV, CUDA. Preferred: ROS 2 integration."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_007_chunk_0",
     "job_id": "job_007",
-    "title": "MLOps & Data Platform Engineer",
-    "company": "Datastream AI",
+    "title": "Applied AI Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Build automated CI/CD and MLOps deployment pipelines for deep learning models. Manage PostgreSQL databases, Redis caches, and Docker/Kubernetes clusters."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_007_chunk_1",
     "job_id": "job_007",
-    "title": "MLOps & Data Platform Engineer",
-    "company": "Datastream AI",
+    "title": "Applied AI Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Python, Docker, Kubernetes, CI/CD, PostgreSQL, Redis, AWS. Preferred: PySpark, MLflow."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_008_chunk_0",
     "job_id": "job_008",
-    "title": "Senior AI Systems Architect",
-    "company": "Enterprise AI Global",
+    "title": "Applied AI Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Architect end-to-end enterprise AI products leveraging LLMs, RAG, vector search, and scalable microservices."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_008_chunk_1",
     "job_id": "job_008",
-    "title": "Senior AI Systems Architect",
-    "company": "Enterprise AI Global",
+    "title": "Applied AI Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Qualifications",
-    "text": "Qualifications: 5+ years experience in Python, System Design, RAG, PyTorch, AWS, PostgreSQL, Docker. Preferred: Kubernetes."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_009_chunk_0",
     "job_id": "job_009",
-    "title": "ML Engineer - LLM Infrastructure",
-    "company": "DataCore Systems",
+    "title": "Applied AI Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for ML Engineer - LLM Infrastructure. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_009_chunk_1",
     "job_id": "job_009",
-    "title": "ML Engineer - LLM Infrastructure",
-    "company": "DataCore Systems",
+    "title": "Applied AI Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, PyTorch, Transformers. Experience with Docker, AWS."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_010_chunk_0",
     "job_id": "job_010",
-    "title": "Robotics Motion Control Software Engineer",
-    "company": "Kinematics Tech",
+    "title": "Applied AI Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Robotics Motion Control Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_010_chunk_1",
     "job_id": "job_010",
-    "title": "Robotics Motion Control Software Engineer",
-    "company": "Kinematics Tech",
+    "title": "Applied AI Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in C++, Python, ROS 2. Experience with Gazebo, Control Systems."
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "LangChain",
+      "Docker",
+      "Vector Databases"
+    ]
   },
   {
     "chunk_id": "job_011_chunk_0",
     "job_id": "job_011",
-    "title": "AI Research Scientist - Computer Vision",
-    "company": "Visionary Research",
+    "title": "Data Scientist (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for AI Research Scientist - Computer Vision. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_011_chunk_1",
     "job_id": "job_011",
-    "title": "AI Research Scientist - Computer Vision",
-    "company": "Visionary Research",
+    "title": "Data Scientist (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in PyTorch, OpenCV, CUDA. Experience with Python, Deep Learning."
+    "text": "Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_012_chunk_0",
     "job_id": "job_012",
-    "title": "Senior Applied NLP Engineer",
-    "company": "TextMetrics Inc",
+    "title": "Data Scientist (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Senior Applied NLP Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_012_chunk_1",
     "job_id": "job_012",
-    "title": "Senior Applied NLP Engineer",
-    "company": "TextMetrics Inc",
+    "title": "Data Scientist (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, Transformers, NLP. Experience with FastAPI, PostgreSQL."
+    "text": "Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_013_chunk_0",
     "job_id": "job_013",
-    "title": "Generative AI Solutions Architect",
-    "company": "CloudAI Partners",
+    "title": "Data Scientist (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Generative AI Solutions Architect. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_013_chunk_1",
     "job_id": "job_013",
-    "title": "Generative AI Solutions Architect",
-    "company": "CloudAI Partners",
+    "title": "Data Scientist (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, RAG, LangChain. Experience with Vector Databases, AWS."
+    "text": "Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_014_chunk_0",
     "job_id": "job_014",
-    "title": "Data Engineer - AI Pipelines",
-    "company": "OmniData Solutions",
+    "title": "Data Scientist (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Data Engineer - AI Pipelines. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_014_chunk_1",
     "job_id": "job_014",
-    "title": "Data Engineer - AI Pipelines",
-    "company": "OmniData Solutions",
+    "title": "Data Scientist (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, SQL, Spark / PySpark. Experience with Airflow, PostgreSQL."
+    "text": "Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_015_chunk_0",
     "job_id": "job_015",
-    "title": "Full Stack AI Software Engineer",
-    "company": "SmartApps Corp",
+    "title": "Data Scientist (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Full Stack AI Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_015_chunk_1",
     "job_id": "job_015",
-    "title": "Full Stack AI Software Engineer",
-    "company": "SmartApps Corp",
+    "title": "Data Scientist (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, TypeScript, React. Experience with FastAPI, Docker."
+    "text": "Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+    "required_skills": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "AWS",
+      "Problem Solving"
+    ]
   },
   {
     "chunk_id": "job_016_chunk_0",
     "job_id": "job_016",
-    "title": "Computer Vision Algorithm Developer",
-    "company": "EdgeVision Systems",
+    "title": "Data Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Computer Vision Algorithm Developer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_016_chunk_1",
     "job_id": "job_016",
-    "title": "Computer Vision Algorithm Developer",
-    "company": "EdgeVision Systems",
+    "title": "Data Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in C++, Python, OpenCV. Experience with PyTorch, YOLO / Computer Vision."
+    "text": "Qualifications: Strong proficiency in Python, SQL, Spark / PySpark. Production experience with Airflow, PostgreSQL. Preferred: Familiarity with Kafka, AWS, Docker.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_017_chunk_0",
     "job_id": "job_017",
-    "title": "Autonomous Navigation Systems Engineer",
-    "company": "DriveTech AI",
+    "title": "Data Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Autonomous Navigation Systems Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_017_chunk_1",
     "job_id": "job_017",
-    "title": "Autonomous Navigation Systems Engineer",
-    "company": "DriveTech AI",
+    "title": "Data Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in ROS 2, C++, Python. Experience with Gazebo, LiDAR."
+    "text": "Qualifications: Strong proficiency in Python, SQL, Spark / PySpark. Production experience with Airflow, PostgreSQL. Preferred: Familiarity with Kafka, AWS, Docker.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_018_chunk_0",
     "job_id": "job_018",
-    "title": "Machine Learning Platform Developer",
-    "company": "ScaleML Labs",
+    "title": "Data Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Machine Learning Platform Developer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_018_chunk_1",
     "job_id": "job_018",
-    "title": "Machine Learning Platform Developer",
-    "company": "ScaleML Labs",
+    "title": "Data Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, Docker, Kubernetes. Experience with MLflow, CI/CD."
+    "text": "Qualifications: Strong proficiency in Python, SQL, Spark / PySpark. Production experience with Airflow, PostgreSQL. Preferred: Familiarity with Kafka, AWS, Docker.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_019_chunk_0",
     "job_id": "job_019",
-    "title": "Applied Scientist - Graph Neural Networks",
-    "company": "NetworkAI",
+    "title": "Data Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Applied Scientist - Graph Neural Networks. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_019_chunk_1",
     "job_id": "job_019",
-    "title": "Applied Scientist - Graph Neural Networks",
-    "company": "NetworkAI",
+    "title": "Data Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in PyTorch, PyTorch Geometric, Graph Neural Networks. Experience with Python."
+    "text": "Qualifications: Strong proficiency in Python, SQL, Spark / PySpark. Production experience with Airflow, PostgreSQL. Preferred: Familiarity with Kafka, AWS, Docker.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_020_chunk_0",
     "job_id": "job_020",
-    "title": "AI Security & Watermarking Researcher",
-    "company": "CyberGuard AI",
+    "title": "Data Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for AI Security & Watermarking Researcher. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_020_chunk_1",
     "job_id": "job_020",
-    "title": "AI Security & Watermarking Researcher",
-    "company": "CyberGuard AI",
+    "title": "Data Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, PyTorch, TensorFlow. Experience with Cybersecurity, Autoencoders."
+    "text": "Qualifications: Strong proficiency in Python, SQL, Spark / PySpark. Production experience with Airflow, PostgreSQL. Preferred: Familiarity with Kafka, AWS, Docker.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Spark / PySpark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_021_chunk_0",
     "job_id": "job_021",
-    "title": "Robotic Perception Software Specialist",
-    "company": "BotSense Inc",
+    "title": "MLOps Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Robotic Perception Software Specialist. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_021_chunk_1",
     "job_id": "job_021",
-    "title": "Robotic Perception Software Specialist",
-    "company": "BotSense Inc",
+    "title": "MLOps Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in ROS 2, Python, YOLO / Computer Vision. Experience with Gazebo, Docker."
+    "text": "Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_022_chunk_0",
     "job_id": "job_022",
-    "title": "Lead AI Search & Information Retrieval Engineer",
-    "company": "FindIT AI",
+    "title": "MLOps Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Lead AI Search & Information Retrieval Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_022_chunk_1",
     "job_id": "job_022",
-    "title": "Lead AI Search & Information Retrieval Engineer",
-    "company": "FindIT AI",
+    "title": "MLOps Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in RAG, FAISS, Python. Experience with Elasticsearch, Sentence Transformers."
+    "text": "Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_023_chunk_0",
     "job_id": "job_023",
-    "title": "ML Optimization & Quantization Engineer",
-    "company": "TensorCore",
+    "title": "MLOps Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for ML Optimization & Quantization Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_023_chunk_1",
     "job_id": "job_023",
-    "title": "ML Optimization & Quantization Engineer",
-    "company": "TensorCore",
+    "title": "MLOps Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in PyTorch, CUDA, TensorRT. Experience with C++, Python."
+    "text": "Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_024_chunk_0",
     "job_id": "job_024",
-    "title": "Deep Learning Engineer - Audio & Speech",
-    "company": "Soundwave AI",
+    "title": "MLOps Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Deep Learning Engineer - Audio & Speech. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_024_chunk_1",
     "job_id": "job_024",
-    "title": "Deep Learning Engineer - Audio & Speech",
-    "company": "Soundwave AI",
+    "title": "MLOps Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, PyTorch, Transformers. Experience with Audio Processing."
+    "text": "Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_025_chunk_0",
     "job_id": "job_025",
-    "title": "Robotics Simulation Engineer",
-    "company": "SimuRobot Technologies",
+    "title": "MLOps Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Robotics Simulation Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_025_chunk_1",
     "job_id": "job_025",
-    "title": "Robotics Simulation Engineer",
-    "company": "SimuRobot Technologies",
+    "title": "MLOps Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in ROS 2, Gazebo, C++. Experience with Python, Docker."
+    "text": "Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "MLflow"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "PostgreSQL",
+      "Bash / Shell"
+    ]
   },
   {
     "chunk_id": "job_026_chunk_0",
     "job_id": "job_026",
-    "title": "Generative Multimodal AI Engineer",
-    "company": "OmniVision AI",
+    "title": "Computer Vision Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Generative Multimodal AI Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_026_chunk_1",
     "job_id": "job_026",
-    "title": "Generative Multimodal AI Engineer",
-    "company": "OmniVision AI",
+    "title": "Computer Vision Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in PyTorch, Transformers, Segment Anything (SAM). Experience with Diffusion Models."
+    "text": "Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_027_chunk_0",
     "job_id": "job_027",
-    "title": "Junior AI Developer",
-    "company": "LaunchPad AI",
+    "title": "Computer Vision Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Junior AI Developer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_027_chunk_1",
     "job_id": "job_027",
-    "title": "Junior AI Developer",
-    "company": "LaunchPad AI",
+    "title": "Computer Vision Engineer (ApexVision)",
+    "company": "ApexVision Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, Scikit-Learn, Git / GitHub. Experience with SQL, REST API."
+    "text": "Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_028_chunk_0",
     "job_id": "job_028",
-    "title": "Staff AI Engineer - Enterprise Search",
-    "company": "Apex Search",
+    "title": "Computer Vision Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Staff AI Engineer - Enterprise Search. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_028_chunk_1",
     "job_id": "job_028",
-    "title": "Staff AI Engineer - Enterprise Search",
-    "company": "Apex Search",
+    "title": "Computer Vision Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, RAG, FAISS. Experience with Vector Databases, PostgreSQL, Docker."
+    "text": "Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_029_chunk_0",
     "job_id": "job_029",
-    "title": "Computer Vision Software Engineer",
-    "company": "CamTech Solutions",
+    "title": "Computer Vision Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for Computer Vision Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_029_chunk_1",
     "job_id": "job_029",
-    "title": "Computer Vision Software Engineer",
-    "company": "CamTech Solutions",
+    "title": "Computer Vision Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Python, OpenCV, PyTorch. Experience with C++."
+    "text": "Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_030_chunk_0",
     "job_id": "job_030",
-    "title": "MLOps Infrastructure Specialist",
-    "company": "CloudDeploy AI",
+    "title": "Computer Vision Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Responsibilities",
-    "text": "Responsibilities: Design, evaluate, and scale production systems for MLOps Infrastructure Specialist. Build robust pipelines and collaborate with cross-functional AI teams."
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
   },
   {
     "chunk_id": "job_030_chunk_1",
     "job_id": "job_030",
-    "title": "MLOps Infrastructure Specialist",
-    "company": "CloudDeploy AI",
+    "title": "Computer Vision Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
     "section": "Qualifications",
-    "text": "Qualifications: Proficiency in Docker, Kubernetes, CI/CD. Experience with Python, Terraform."
+    "text": "Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "PyTorch",
+      "OpenCV",
+      "YOLO / Computer Vision"
+    ],
+    "preferred_skills": [
+      "CUDA",
+      "Segment Anything (SAM)",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_031_chunk_0",
+    "job_id": "job_031",
+    "title": "NLP Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for NLP Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_031_chunk_1",
+    "job_id": "job_031",
+    "title": "NLP Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Transformers. Production experience with Large Language Models (LLMs), FastAPI. Preferred: Familiarity with HuggingFace, RAG, LangChain.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_032_chunk_0",
+    "job_id": "job_032",
+    "title": "NLP Engineer (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for NLP Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_032_chunk_1",
+    "job_id": "job_032",
+    "title": "NLP Engineer (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Transformers. Production experience with Large Language Models (LLMs), FastAPI. Preferred: Familiarity with HuggingFace, RAG, LangChain.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_033_chunk_0",
+    "job_id": "job_033",
+    "title": "NLP Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for NLP Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_033_chunk_1",
+    "job_id": "job_033",
+    "title": "NLP Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Transformers. Production experience with Large Language Models (LLMs), FastAPI. Preferred: Familiarity with HuggingFace, RAG, LangChain.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_034_chunk_0",
+    "job_id": "job_034",
+    "title": "NLP Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for NLP Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_034_chunk_1",
+    "job_id": "job_034",
+    "title": "NLP Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Transformers. Production experience with Large Language Models (LLMs), FastAPI. Preferred: Familiarity with HuggingFace, RAG, LangChain.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_035_chunk_0",
+    "job_id": "job_035",
+    "title": "NLP Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for NLP Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_035_chunk_1",
+    "job_id": "job_035",
+    "title": "NLP Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, PyTorch, Transformers. Production experience with Large Language Models (LLMs), FastAPI. Preferred: Familiarity with HuggingFace, RAG, LangChain.",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "Large Language Models (LLMs)",
+      "FastAPI"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "RAG",
+      "LangChain"
+    ]
+  },
+  {
+    "chunk_id": "job_036_chunk_0",
+    "job_id": "job_036",
+    "title": "Robotics Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Robotics Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_036_chunk_1",
+    "job_id": "job_036",
+    "title": "Robotics Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, C++, ROS 2. Production experience with Gazebo, Docker. Preferred: Familiarity with YOLO / Computer Vision, Zenoh, Linux.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_037_chunk_0",
+    "job_id": "job_037",
+    "title": "Robotics Engineer (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Robotics Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_037_chunk_1",
+    "job_id": "job_037",
+    "title": "Robotics Engineer (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, C++, ROS 2. Production experience with Gazebo, Docker. Preferred: Familiarity with YOLO / Computer Vision, Zenoh, Linux.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_038_chunk_0",
+    "job_id": "job_038",
+    "title": "Robotics Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Robotics Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_038_chunk_1",
+    "job_id": "job_038",
+    "title": "Robotics Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, C++, ROS 2. Production experience with Gazebo, Docker. Preferred: Familiarity with YOLO / Computer Vision, Zenoh, Linux.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_039_chunk_0",
+    "job_id": "job_039",
+    "title": "Robotics Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Robotics Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_039_chunk_1",
+    "job_id": "job_039",
+    "title": "Robotics Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, C++, ROS 2. Production experience with Gazebo, Docker. Preferred: Familiarity with YOLO / Computer Vision, Zenoh, Linux.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_040_chunk_0",
+    "job_id": "job_040",
+    "title": "Robotics Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Robotics Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_040_chunk_1",
+    "job_id": "job_040",
+    "title": "Robotics Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, C++, ROS 2. Production experience with Gazebo, Docker. Preferred: Familiarity with YOLO / Computer Vision, Zenoh, Linux.",
+    "required_skills": [
+      "Python",
+      "C++",
+      "ROS 2",
+      "Gazebo",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "YOLO / Computer Vision",
+      "Zenoh",
+      "Linux"
+    ]
+  },
+  {
+    "chunk_id": "job_041_chunk_0",
+    "job_id": "job_041",
+    "title": "GenAI Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for GenAI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_041_chunk_1",
+    "job_id": "job_041",
+    "title": "GenAI Engineer (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG). Production experience with FAISS, LangChain. Preferred: Familiarity with Vector Databases, Transformers, Docker.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_042_chunk_0",
+    "job_id": "job_042",
+    "title": "GenAI Engineer (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for GenAI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_042_chunk_1",
+    "job_id": "job_042",
+    "title": "GenAI Engineer (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG). Production experience with FAISS, LangChain. Preferred: Familiarity with Vector Databases, Transformers, Docker.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_043_chunk_0",
+    "job_id": "job_043",
+    "title": "GenAI Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for GenAI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_043_chunk_1",
+    "job_id": "job_043",
+    "title": "GenAI Engineer (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG). Production experience with FAISS, LangChain. Preferred: Familiarity with Vector Databases, Transformers, Docker.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_044_chunk_0",
+    "job_id": "job_044",
+    "title": "GenAI Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for GenAI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_044_chunk_1",
+    "job_id": "job_044",
+    "title": "GenAI Engineer (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG). Production experience with FAISS, LangChain. Preferred: Familiarity with Vector Databases, Transformers, Docker.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_045_chunk_0",
+    "job_id": "job_045",
+    "title": "GenAI Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for GenAI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_045_chunk_1",
+    "job_id": "job_045",
+    "title": "GenAI Engineer (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in Python, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG). Production experience with FAISS, LangChain. Preferred: Familiarity with Vector Databases, Transformers, Docker.",
+    "required_skills": [
+      "Python",
+      "Large Language Models (LLMs)",
+      "Retrieval-Augmented Generation (RAG)",
+      "FAISS",
+      "LangChain"
+    ],
+    "preferred_skills": [
+      "Vector Databases",
+      "Transformers",
+      "Docker"
+    ]
+  },
+  {
+    "chunk_id": "job_046_chunk_0",
+    "job_id": "job_046",
+    "title": "Data Analyst (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Analyst roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_046_chunk_1",
+    "job_id": "job_046",
+    "title": "Data Analyst (CognitiveTech)",
+    "company": "CognitiveTech Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in SQL, Python, Pandas. Production experience with Problem Solving, Communication. Preferred: Familiarity with PostgreSQL, Bash / Shell, Team Collaboration.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_047_chunk_0",
+    "job_id": "job_047",
+    "title": "Data Analyst (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Analyst roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_047_chunk_1",
+    "job_id": "job_047",
+    "title": "Data Analyst (ApexVision)",
+    "company": "ApexVision Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in SQL, Python, Pandas. Production experience with Problem Solving, Communication. Preferred: Familiarity with PostgreSQL, Bash / Shell, Team Collaboration.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_048_chunk_0",
+    "job_id": "job_048",
+    "title": "Data Analyst (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Analyst roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_048_chunk_1",
+    "job_id": "job_048",
+    "title": "Data Analyst (GraphLabs)",
+    "company": "GraphLabs Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in SQL, Python, Pandas. Production experience with Problem Solving, Communication. Preferred: Familiarity with PostgreSQL, Bash / Shell, Team Collaboration.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_049_chunk_0",
+    "job_id": "job_049",
+    "title": "Data Analyst (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Analyst roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_049_chunk_1",
+    "job_id": "job_049",
+    "title": "Data Analyst (NovaRobotics)",
+    "company": "NovaRobotics Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in SQL, Python, Pandas. Production experience with Problem Solving, Communication. Preferred: Familiarity with PostgreSQL, Bash / Shell, Team Collaboration.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_050_chunk_0",
+    "job_id": "job_050",
+    "title": "Data Analyst (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Responsibilities",
+    "text": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Analyst roles. Build production pipelines, optimize latency, and collaborate across engineering teams.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
+  },
+  {
+    "chunk_id": "job_050_chunk_1",
+    "job_id": "job_050",
+    "title": "Data Analyst (SynthetixAI)",
+    "company": "SynthetixAI Systems",
+    "section": "Qualifications",
+    "text": "Qualifications: Strong proficiency in SQL, Python, Pandas. Production experience with Problem Solving, Communication. Preferred: Familiarity with PostgreSQL, Bash / Shell, Team Collaboration.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Problem Solving",
+      "Communication"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Bash / Shell",
+      "Team Collaboration"
+    ]
   }
 ]

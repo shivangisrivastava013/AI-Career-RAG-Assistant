@@ -1,17 +1,21 @@
 {
   "job_id": "job_017",
-  "title": "Autonomous Navigation Systems Engineer",
-  "company": "DriveTech AI",
+  "title": "Data Engineer (ApexVision)",
+  "company": "ApexVision Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Autonomous Navigation Systems Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in ROS 2, C++, Python. Experience with Gazebo, LiDAR.",
-  "source_url": "https://careers.example.com/jobs/job_017",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, SQL, Spark / PySpark. Production experience with Airflow, PostgreSQL. Preferred: Familiarity with Kafka, AWS, Docker.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "ROS 2",
-    "C++",
-    "Python"
+    "Python",
+    "SQL",
+    "Spark / PySpark",
+    "Airflow",
+    "PostgreSQL"
   ],
   "preferred_skills": [
-    "Gazebo",
-    "LiDAR"
+    "Kafka",
+    "AWS",
+    "Docker"
   ]
 }

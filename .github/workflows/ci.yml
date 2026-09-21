@@ -1,4 +1,4 @@
-name: CI & Quality Pipeline
+name: Continuous Integration (CI)
 
 on:
   push:
@@ -10,10 +10,10 @@ jobs:
   test-and-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -30,17 +30,16 @@ jobs:
         run: |
           black --check .
 
-      - name: Generate Sample Data & Index FAISS Corpus
+      - name: Generate Synthetic Jobs & Candidate Resumes
         run: |
           python generate_jobs.py
           python generate_resumes.py
-          python -m rag_assistant.index_jobs --input data/jobs --output artifacts --allow-fallback
 
       - name: Run Pytest Suite
         run: |
-          pytest tests/ -v
+          python -m pytest tests/ -v
 
-      - name: Run Benchmark Evaluation Script
+      - name: Run Empirical Evaluation Benchmark
         run: |
           python evaluate.py
 
@@ -48,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: test-and-lint
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Build Docker Image
         run: |

@@ -1,8 +1,10 @@
-import os
+import datetime
 import json
 import logging
+import os
+from typing import Any, Dict, List, Optional
+
 import numpy as np
-from typing import List, Dict, Any, Tuple, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -10,11 +12,12 @@ logger = logging.getLogger(__name__)
 class PersistentFAISSVectorStore:
     """
     Manages persistent FAISS vector indexing (IndexFlatIP / IndexFlatL2)
-    and JSON metadata storage for semantic job retrieval.
+    and metadata storage with encoder compatibility validation.
     """
 
-    def __init__(self, dimension: int = 384):
+    def __init__(self, dimension: int = 384, encoder_model: str = "sentence-transformers/all-MiniLM-L6-v2"):
         self.dimension = dimension
+        self.encoder_model = encoder_model
         self.faiss_index = None
         self.metadata_store: List[Dict[str, Any]] = []
         self.use_faiss = False
@@ -23,7 +26,7 @@ class PersistentFAISSVectorStore:
     def _init_faiss(self):
         try:
             import faiss
-            # Inner-product index for normalized cosine similarity search
+
             self.faiss_index = faiss.IndexFlatIP(self.dimension)
             self.use_faiss = True
             logger.info("FAISS vector index initialized successfully.")
@@ -33,23 +36,18 @@ class PersistentFAISSVectorStore:
             self.vectors = np.zeros((0, self.dimension), dtype=np.float32)
 
     def add_chunks(self, chunks: List[Dict[str, Any]], embeddings: np.ndarray):
-        """
-        Adds text chunks and normalized embeddings to the vector store.
-        """
         if len(chunks) == 0 or len(embeddings) == 0:
             return
 
         if len(chunks) != len(embeddings):
             raise ValueError(f"Chunk count ({len(chunks)}) mismatch with embeddings count ({len(embeddings)})")
 
-        # Ensure float32 and L2 normalization
         vecs = embeddings.astype(np.float32)
         norms = np.linalg.norm(vecs, axis=1, keepdims=True)
         norms[norms == 0] = 1e-8
         vecs = vecs / norms
 
         if self.use_faiss:
-            import faiss
             self.faiss_index.add(vecs)
         else:
             if len(self.vectors) == 0:
@@ -61,9 +59,6 @@ class PersistentFAISSVectorStore:
         logger.info(f"Added {len(chunks)} chunks to vector store. Total chunks: {len(self.metadata_store)}")
 
     def search(self, query_vector: np.ndarray, top_k: int = 5) -> List[Dict[str, Any]]:
-        """
-        Searches top-k most similar chunks for a given query vector.
-        """
         if len(self.metadata_store) == 0:
             return []
 
@@ -95,9 +90,6 @@ class PersistentFAISSVectorStore:
         return results
 
     def save(self, artifacts_dir: str):
-        """
-        Persists FAISS index, metadata JSON, and config file to artifacts directory.
-        """
         os.makedirs(artifacts_dir, exist_ok=True)
 
         faiss_path = os.path.join(artifacts_dir, "jobs.faiss")
@@ -106,6 +98,7 @@ class PersistentFAISSVectorStore:
 
         if self.use_faiss:
             import faiss
+
             faiss.write_index(self.faiss_index, faiss_path)
         else:
             np.save(faiss_path + ".npy", self.vectors)
@@ -115,18 +108,19 @@ class PersistentFAISSVectorStore:
 
         config = {
             "dimension": self.dimension,
+            "encoder_model": self.encoder_model,
+            "normalization": "l2",
+            "distance_metric": "inner_product",
             "total_chunks": len(self.metadata_store),
-            "use_faiss": self.use_faiss
+            "use_faiss": self.use_faiss,
+            "created_at": datetime.datetime.utcnow().isoformat(),
         }
         with open(config_path, "w", encoding="utf-8") as f:
             json.dump(config, f, indent=2)
 
         logger.info(f"Saved persistent vector store to '{artifacts_dir}'")
 
-    def load(self, artifacts_dir: str):
-        """
-        Loads persistent FAISS index and metadata JSON from artifacts directory.
-        """
+    def load(self, artifacts_dir: str, expected_encoder: Optional[str] = None):
         faiss_path = os.path.join(artifacts_dir, "jobs.faiss")
         metadata_path = os.path.join(artifacts_dir, "job_metadata.json")
         config_path = os.path.join(artifacts_dir, "index_config.json")
@@ -141,14 +135,31 @@ class PersistentFAISSVectorStore:
             with open(config_path, "r", encoding="utf-8") as f:
                 cfg = json.load(f)
                 self.dimension = cfg.get("dimension", 384)
+                saved_encoder = cfg.get("encoder_model")
+                if saved_encoder:
+                    self.encoder_model = saved_encoder
+                    if expected_encoder and expected_encoder != saved_encoder:
+                        raise ValueError(
+                            f"Vector store encoder mismatch: Index built with '{saved_encoder}', "
+                            f"but runtime requested '{expected_encoder}'."
+                        )
 
         if self.use_faiss and os.path.exists(faiss_path):
             import faiss
+
             self.faiss_index = faiss.read_index(faiss_path)
+            if self.faiss_index.ntotal != len(self.metadata_store):
+                raise ValueError(
+                    f"FAISS vector count ({self.faiss_index.ntotal}) mismatch with metadata count ({len(self.metadata_store)})"
+                )
             logger.info(f"Loaded FAISS index with {self.faiss_index.ntotal} vectors.")
         elif os.path.exists(faiss_path + ".npy"):
             self.vectors = np.load(faiss_path + ".npy")
             self.use_faiss = False
+            if len(self.vectors) != len(self.metadata_store):
+                raise ValueError(
+                    f"NumPy vector count ({len(self.vectors)}) mismatch with metadata count ({len(self.metadata_store)})"
+                )
             logger.info(f"Loaded NumPy vectors with shape {self.vectors.shape}")
         else:
             logger.warning(f"No FAISS index found at {faiss_path}. Initialized empty vector store.")

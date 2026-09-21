@@ -1,0 +1,4 @@
+Sophia Taylor
+MLOps Engineer
+DevOps and MLOps specialist managing Docker containers, Kubernetes deployment, and automated CI/CD pipelines.
+SKILLS: Python, Docker, Kubernetes, CI/CD, MLflow, AWS, PostgreSQL, Bash / Shell, Git / GitHub.

@@ -1,7 +1,7 @@
-import re
-import os
 import logging
-from typing import Dict, List, Any
+import os
+import re
+from typing import Any, Dict, List
 
 logger = logging.getLogger(__name__)
 
@@ -19,8 +19,8 @@ class DocumentParser:
         """
         if not text:
             return ""
-        text = re.sub(r'[\r\n\t]+', ' ', text)
-        text = re.sub(r'\s+', ' ', text)
+        text = re.sub(r"[\r\n\t]+", " ", text)
+        text = re.sub(r"\s+", " ", text)
         return text.strip()
 
     @classmethod
@@ -50,7 +50,7 @@ class DocumentParser:
             "file_path": file_path,
             "raw_text": raw_text,
             "clean_text": cls.clean_text(raw_text),
-            "sections": sections
+            "sections": sections,
         }
 
     @staticmethod
@@ -60,6 +60,7 @@ class DocumentParser:
         """
         try:
             from pypdf import PdfReader
+
             reader = PdfReader(file_path)
             pages_text = []
             for i, page in enumerate(reader.pages):
@@ -77,6 +78,7 @@ class DocumentParser:
         """
         try:
             import docx
+
             doc = docx.Document(file_path)
             full_text = [p.text for p in doc.paragraphs if p.text.strip()]
             return "\n".join(full_text)
@@ -95,7 +97,7 @@ class DocumentParser:
             "education": r"(?:education|academic\s+background|degrees)",
             "skills": r"(?:skills|technical\s+skills|core\s+competencies|technologies)",
             "projects": r"(?:projects|key\s+projects|featured\s+work)",
-            "certifications": r"(?:certifications|licenses|credentials|courses)"
+            "certifications": r"(?:certifications|licenses|credentials|courses)",
         }
 
         sections: Dict[str, str] = {sec: "" for sec in section_headers}

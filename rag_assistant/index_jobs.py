@@ -1,10 +1,10 @@
 import argparse
 import logging
-import os
 import sys
-from .ingestion import JobCorpusIngestor
+
 from .chunking import SectionAwareChunker
 from .embeddings import VectorStoreManager
+from .ingestion import JobCorpusIngestor
 from .vector_store import PersistentFAISSVectorStore
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -15,8 +15,12 @@ def main():
     parser = argparse.ArgumentParser(description="Batch index job corpus into persistent FAISS vector store.")
     parser.add_argument("--input", type=str, default="data/jobs", help="Path to job JSON files directory.")
     parser.add_argument("--output", type=str, default="artifacts", help="Directory to save persistent index files.")
-    parser.add_argument("--model", type=str, default="sentence-transformers/all-MiniLM-L6-v2", help="Transformer model name.")
-    parser.add_argument("--allow-fallback", action="store_true", help="Allow fallback SHA-256 encoding if model fails to load.")
+    parser.add_argument(
+        "--model", type=str, default="sentence-transformers/all-MiniLM-L6-v2", help="Transformer model name."
+    )
+    parser.add_argument(
+        "--allow-fallback", action="store_true", help="Allow fallback SHA-256 encoding if model fails to load."
+    )
 
     args = parser.parse_args()
 

@@ -1,0 +1,4 @@
+Alex Rivera
+Machine Learning Engineer
+Experienced ML Engineer specializing in production PyTorch model deployment, Scikit-Learn pipelines, and PostgreSQL data pipelines.
+SKILLS: Python, PyTorch, Scikit-Learn, Docker, PostgreSQL, AWS, MLflow, CI/CD, SQL, Git / GitHub.

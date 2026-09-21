@@ -1,21 +1,21 @@
 {
   "job_id": "job_007",
-  "title": "MLOps & Data Platform Engineer",
-  "company": "Datastream AI",
-  "location": "Seattle, WA",
-  "description": "Responsibilities: Build automated CI/CD and MLOps deployment pipelines for deep learning models. Manage PostgreSQL databases, Redis caches, and Docker/Kubernetes clusters. Qualifications: Python, Docker, Kubernetes, CI/CD, PostgreSQL, Redis, AWS. Preferred: PySpark, MLflow.",
-  "source_url": "https://careers.datastream.com/jobs/007",
+  "title": "Applied AI Engineer (ApexVision)",
+  "company": "ApexVision Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "Docker",
-    "Kubernetes",
-    "PostgreSQL",
-    "CI/CD",
-    "AWS"
+    "PyTorch",
+    "Retrieval-Augmented Generation (RAG)",
+    "FAISS",
+    "FastAPI"
   ],
   "preferred_skills": [
-    "Redis",
-    "PySpark",
-    "MLflow"
+    "LangChain",
+    "Docker",
+    "Vector Databases"
   ]
 }

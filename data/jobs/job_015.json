@@ -1,17 +1,21 @@
 {
   "job_id": "job_015",
-  "title": "Full Stack AI Software Engineer",
-  "company": "SmartApps Corp",
+  "title": "Data Scientist (SynthetixAI)",
+  "company": "SynthetixAI Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Full Stack AI Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, TypeScript, React. Experience with FastAPI, Docker.",
-  "source_url": "https://careers.example.com/jobs/job_015",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "TypeScript",
-    "React"
+    "Scikit-Learn",
+    "Pandas",
+    "NumPy",
+    "SQL"
   ],
   "preferred_skills": [
-    "FastAPI",
-    "Docker"
+    "PostgreSQL",
+    "AWS",
+    "Problem Solving"
   ]
 }

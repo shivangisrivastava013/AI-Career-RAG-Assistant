@@ -1,17 +1,21 @@
 {
   "job_id": "job_016",
-  "title": "Computer Vision Algorithm Developer",
-  "company": "EdgeVision Systems",
+  "title": "Data Engineer (CognitiveTech)",
+  "company": "CognitiveTech Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Computer Vision Algorithm Developer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in C++, Python, OpenCV. Experience with PyTorch, YOLO / Computer Vision.",
-  "source_url": "https://careers.example.com/jobs/job_016",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, SQL, Spark / PySpark. Production experience with Airflow, PostgreSQL. Preferred: Familiarity with Kafka, AWS, Docker.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "C++",
     "Python",
-    "OpenCV"
+    "SQL",
+    "Spark / PySpark",
+    "Airflow",
+    "PostgreSQL"
   ],
   "preferred_skills": [
-    "PyTorch",
-    "YOLO / Computer Vision"
+    "Kafka",
+    "AWS",
+    "Docker"
   ]
 }

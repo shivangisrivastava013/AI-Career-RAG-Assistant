@@ -1,17 +1,21 @@
 {
   "job_id": "job_011",
-  "title": "AI Research Scientist - Computer Vision",
-  "company": "Visionary Research",
+  "title": "Data Scientist (CognitiveTech)",
+  "company": "CognitiveTech Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for AI Research Scientist - Computer Vision. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in PyTorch, OpenCV, CUDA. Experience with Python, Deep Learning.",
-  "source_url": "https://careers.example.com/jobs/job_011",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "PyTorch",
-    "OpenCV",
-    "CUDA"
+    "Python",
+    "Scikit-Learn",
+    "Pandas",
+    "NumPy",
+    "SQL"
   ],
   "preferred_skills": [
-    "Python",
-    "Deep Learning"
+    "PostgreSQL",
+    "AWS",
+    "Problem Solving"
   ]
 }

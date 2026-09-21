@@ -1,20 +1,21 @@
 {
   "job_id": "job_008",
-  "title": "Senior AI Systems Architect",
-  "company": "Enterprise AI Global",
-  "location": "New York, NY",
-  "description": "Responsibilities: Architect end-to-end enterprise AI products leveraging LLMs, RAG, vector search, and scalable microservices. Qualifications: 5+ years experience in Python, System Design, RAG, PyTorch, AWS, PostgreSQL, Docker. Preferred: Kubernetes.",
-  "source_url": "https://careers.enterpriseai.com/jobs/008",
+  "title": "Applied AI Engineer (GraphLabs)",
+  "company": "GraphLabs Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "System Design",
-    "RAG",
     "PyTorch",
-    "AWS",
-    "PostgreSQL"
+    "Retrieval-Augmented Generation (RAG)",
+    "FAISS",
+    "FastAPI"
   ],
   "preferred_skills": [
-    "Kubernetes",
-    "FAISS"
+    "LangChain",
+    "Docker",
+    "Vector Databases"
   ]
 }

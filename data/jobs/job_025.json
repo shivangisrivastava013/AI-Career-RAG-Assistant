@@ -1,17 +1,21 @@
 {
   "job_id": "job_025",
-  "title": "Robotics Simulation Engineer",
-  "company": "SimuRobot Technologies",
+  "title": "MLOps Engineer (SynthetixAI)",
+  "company": "SynthetixAI Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Robotics Simulation Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in ROS 2, Gazebo, C++. Experience with Python, Docker.",
-  "source_url": "https://careers.example.com/jobs/job_025",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "ROS 2",
-    "Gazebo",
-    "C++"
+    "Python",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "MLflow"
   ],
   "preferred_skills": [
-    "Python",
-    "Docker"
+    "AWS",
+    "PostgreSQL",
+    "Bash / Shell"
   ]
 }

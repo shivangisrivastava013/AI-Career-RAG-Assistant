@@ -1,17 +1,21 @@
 {
   "job_id": "job_021",
-  "title": "Robotic Perception Software Specialist",
-  "company": "BotSense Inc",
+  "title": "MLOps Engineer (CognitiveTech)",
+  "company": "CognitiveTech Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Robotic Perception Software Specialist. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in ROS 2, Python, YOLO / Computer Vision. Experience with Gazebo, Docker.",
-  "source_url": "https://careers.example.com/jobs/job_021",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "ROS 2",
     "Python",
-    "YOLO / Computer Vision"
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "MLflow"
   ],
   "preferred_skills": [
-    "Gazebo",
-    "Docker"
+    "AWS",
+    "PostgreSQL",
+    "Bash / Shell"
   ]
 }

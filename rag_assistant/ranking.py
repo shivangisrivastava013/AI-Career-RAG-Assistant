@@ -1,16 +1,18 @@
+import logging
 import os
 import re
+from typing import Any, Dict, Optional
+
 import yaml
-import logging
-from typing import Dict, List, Any
 
 logger = logging.getLogger(__name__)
 
 
 class ConfigurableJobRanker:
     """
-    Computes transparent multi-component compatibility scores based on configured matrix:
+    Computes transparent multi-component compatibility scores using a 5-component matrix:
     Required Skills (40%), Responsibilities (25%), Experience (15%), Education (10%), Preferred Skills (10%).
+    Includes dynamic weight redistribution for missing/unspecified components.
     """
 
     DEFAULT_WEIGHTS = {
@@ -18,7 +20,7 @@ class ConfigurableJobRanker:
         "responsibilities": 0.25,
         "experience_level": 0.15,
         "education_level": 0.10,
-        "preferred_skills": 0.10
+        "preferred_skills": 0.10,
     }
 
     def __init__(self, config_path: str = "config/scoring.yaml"):
@@ -36,88 +38,122 @@ class ConfigurableJobRanker:
             except Exception as e:
                 logger.warning(f"Could not parse {config_path}: {e}. Using default weights.")
 
-        # Normalize weights to sum to 1.0
-        total_w = sum(self.weights.values())
-        if total_w > 0:
-            for k in self.weights:
-                self.weights[k] /= total_w
-
     def compute_composite_score(
         self,
         semantic_responsibility_sim: float,
         required_skill_coverage: float,
-        preferred_skill_coverage: float,
+        preferred_skill_coverage: Optional[float],
         resume_text: str,
-        job: Dict[str, Any]
+        job: Dict[str, Any],
     ) -> Dict[str, Any]:
         """
-        Calculates individual component scores and final weighted composite compatibility score.
+        Calculates individual component scores and final weighted composite compatibility score
+        with dynamic weight redistribution for unavailable components.
         """
         exp_score = self._evaluate_experience_alignment(resume_text, job.get("description", ""))
         edu_score = self._evaluate_education_alignment(resume_text, job.get("description", ""))
 
-        w_req = self.weights.get("required_skills", 0.40) * required_skill_coverage
-        w_resp = self.weights.get("responsibilities", 0.25) * semantic_responsibility_sim
-        w_exp = self.weights.get("experience_level", 0.15) * exp_score
-        w_edu = self.weights.get("education_level", 0.10) * edu_score
-        w_pref = self.weights.get("preferred_skills", 0.10) * preferred_skill_coverage
+        raw_scores: Dict[str, Optional[float]] = {
+            "required_skills": required_skill_coverage,
+            "responsibilities": semantic_responsibility_sim,
+            "experience_level": exp_score,
+            "education_level": edu_score,
+            "preferred_skills": preferred_skill_coverage,
+        }
 
-        composite = (w_req + w_resp + w_exp + w_edu + w_pref)
+        # Filter active components (where score is not None)
+        active_weights = {}
+        for comp, score in raw_scores.items():
+            if score is not None:
+                active_weights[comp] = self.weights.get(comp, 0.10)
+
+        # Dynamic weight redistribution
+        total_active_w = sum(active_weights.values())
+        norm_weights = {}
+        if total_active_w > 0:
+            for comp in active_weights:
+                norm_weights[comp] = active_weights[comp] / total_active_w
+
+        composite = 0.0
+        component_breakdown = {}
+
+        for comp, score in raw_scores.items():
+            if score is not None:
+                w = norm_weights.get(comp, 0.0)
+                composite += w * score
+                component_breakdown[comp] = round(score * 100, 1)
+            else:
+                component_breakdown[comp] = "insufficient_evidence"
+
         overall_percentage = min(100.0, max(0.0, composite * 100.0))
 
         return {
             "overall_match_score": round(overall_percentage, 1),
             "composite_score": round(composite, 4),
-            "component_breakdown": {
-                "required_skill_coverage": round(required_skill_coverage * 100, 1),
-                "responsibility_semantic_similarity": round(semantic_responsibility_sim * 100, 1),
-                "experience_alignment": round(exp_score * 100, 1),
-                "education_alignment": round(edu_score * 100, 1),
-                "preferred_skill_coverage": round(preferred_skill_coverage * 100, 1)
-            },
-            "configured_weights": self.weights
+            "component_breakdown": component_breakdown,
+            "redistributed_weights": {k: round(v, 4) for k, v in norm_weights.items()},
         }
 
     @staticmethod
-    def _evaluate_experience_alignment(resume_text: str, jd_text: str) -> float:
+    def _evaluate_experience_alignment(resume_text: str, jd_text: str) -> Optional[float]:
         """
-        Heuristic evaluation of years of experience alignment between candidate and JD.
+        Evaluates years of experience alignment. Returns None if unspecified.
         """
-        jd_years = re.findall(r'(\d+)\+?\s*(?:years|yrs)', jd_text.lower())
-        res_years = re.findall(r'(\d+)\+?\s*(?:years|yrs)', resume_text.lower())
+        jd_years = re.findall(r"(\d+)\+?\s*(?:years|yrs)", jd_text.lower())
+        res_years = re.findall(r"(\d+)\+?\s*(?:years|yrs)", resume_text.lower())
 
-        req_years = max([int(y) for y in jd_years], default=2)
-        cand_years = max([int(y) for y in res_years], default=2)
+        if not jd_years or not res_years:
+            return None
+
+        req_years = max([int(y) for y in jd_years])
+        cand_years = max([int(y) for y in res_years])
 
         if cand_years >= req_years:
             return 1.0
-        elif cand_years > 0:
+        elif req_years > 0:
             return cand_years / float(req_years)
-        return 0.6
+        return 1.0
 
     @staticmethod
-    def _evaluate_education_alignment(resume_text: str, jd_text: str) -> float:
+    def _evaluate_education_alignment(resume_text: str, jd_text: str) -> Optional[float]:
         """
-        Evaluates degree level alignment (PhD, Master's, Bachelor's).
+        Evaluates degree level alignment using word-boundary regex patterns.
         """
         res_low = resume_text.lower()
         jd_low = jd_text.lower()
 
-        res_phd = "phd" in res_low or "doctorate" in res_low or "ph.d" in res_low
-        res_ms = "master" in res_low or "m.s" in res_low or "m.tech" in res_low or "ms" in res_low
-        res_bs = "bachelor" in res_low or "b.s" in res_low or "b.tech" in res_low or "bs" in res_low
+        phd_pattern = r"\b(?:ph\.?d\.?|doctorate)\b"
+        ms_pattern = r"\b(?:m\.?s\.?|master(?:'s)?|m\.tech)\b"
+        bs_pattern = r"\b(?:b\.?s\.?|bachelor(?:'s)?|b\.tech)\b"
 
-        jd_phd = "phd" in jd_low or "doctorate" in jd_low
-        jd_ms = "master" in jd_low or "m.s" in jd_low
+        res_phd = bool(re.search(phd_pattern, res_low))
+        res_ms = bool(re.search(ms_pattern, res_low))
+        res_bs = bool(re.search(bs_pattern, res_low))
+
+        jd_phd = bool(re.search(phd_pattern, jd_low))
+        jd_ms = bool(re.search(ms_pattern, jd_low))
+        jd_bs = bool(re.search(bs_pattern, jd_low))
+
+        if not (jd_phd or jd_ms or jd_bs):
+            return None
 
         if jd_phd:
-            if res_phd: return 1.0
-            if res_ms: return 0.8
-            if res_bs: return 0.5
+            if res_phd:
+                return 1.0
+            if res_ms:
+                return 0.8
+            if res_bs:
+                return 0.5
             return 0.4
         elif jd_ms:
-            if res_phd or res_ms: return 1.0
-            if res_bs: return 0.85
+            if res_phd or res_ms:
+                return 1.0
+            if res_bs:
+                return 0.85
             return 0.6
+        elif jd_bs:
+            if res_phd or res_ms or res_bs:
+                return 1.0
+            return 0.7
 
-        return 1.0 if (res_bs or res_ms or res_phd) else 0.8
+        return 1.0

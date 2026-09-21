@@ -1,5 +1,5 @@
-import os
 import pytest
+
 from rag_assistant.parser import DocumentParser
 
 

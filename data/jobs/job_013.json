@@ -1,17 +1,21 @@
 {
   "job_id": "job_013",
-  "title": "Generative AI Solutions Architect",
-  "company": "CloudAI Partners",
+  "title": "Data Scientist (GraphLabs)",
+  "company": "GraphLabs Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Generative AI Solutions Architect. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, RAG, LangChain. Experience with Vector Databases, AWS.",
-  "source_url": "https://careers.example.com/jobs/job_013",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "RAG",
-    "LangChain"
+    "Scikit-Learn",
+    "Pandas",
+    "NumPy",
+    "SQL"
   ],
   "preferred_skills": [
-    "Vector Databases",
-    "AWS"
+    "PostgreSQL",
+    "AWS",
+    "Problem Solving"
   ]
 }

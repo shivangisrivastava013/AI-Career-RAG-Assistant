@@ -1,7 +1,8 @@
-import logging
 import hashlib
+import logging
+from typing import List
+
 import numpy as np
-from typing import List, Dict, Any, Tuple, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -12,11 +13,7 @@ class VectorStoreManager:
     for semantic retrieval over resumes and job requirements.
     """
 
-    def __init__(
-        self,
-        model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
-        allow_fallback: bool = False
-    ):
+    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2", allow_fallback: bool = False):
         self.model_name = model_name
         self.allow_fallback = allow_fallback
         self.model = None
@@ -26,6 +23,7 @@ class VectorStoreManager:
     def _init_model(self):
         try:
             from sentence_transformers import SentenceTransformer
+
             self.model = SentenceTransformer(self.model_name)
             self.model_used = self.model_name
             logger.info(f"Successfully loaded transformer model: {self.model_name}")
@@ -60,10 +58,7 @@ class VectorStoreManager:
 
         if self.model is not None:
             embeddings = self.model.encode(
-                clean_texts,
-                convert_to_numpy=True,
-                show_progress_bar=False,
-                normalize_embeddings=True
+                clean_texts, convert_to_numpy=True, show_progress_bar=False, normalize_embeddings=True
             )
             return embeddings.astype(np.float32)
 
@@ -81,10 +76,10 @@ class VectorStoreManager:
             v = np.zeros(dim, dtype=np.float32)
             for w in words:
                 # Stable 32-bit SHA-256 hash integer modulo dimension
-                digest = hashlib.sha256(w.encode('utf-8')).hexdigest()
+                digest = hashlib.sha256(w.encode("utf-8")).hexdigest()
                 idx = int(digest, 16) % dim
                 v[idx] += 1.0
-            
+
             # L2 Normalization
             norm = np.linalg.norm(v)
             if norm > 0:

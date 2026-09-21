@@ -1,20 +1,21 @@
 {
   "job_id": "job_003",
-  "title": "Graph Machine Learning Research Engineer",
-  "company": "GraphNet Labs",
-  "location": "Boston, MA",
-  "description": "Responsibilities: Benchmark and scale Graph Neural Network (GCN, GraphSAGE) architectures for node classification and citation networks. Implement graph embeddings using PyTorch Geometric. Qualifications: MS or PhD in Computer Science or AI. PyTorch, PyTorch Geometric, Python, SQL. Preferred: Scikit-Learn and Docker.",
-  "source_url": "https://careers.graphnet.com/jobs/003",
+  "title": "Machine Learning Engineer (GraphLabs)",
+  "company": "GraphLabs Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Machine Learning Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Scikit-Learn. Production experience with Docker, PostgreSQL. Preferred: Familiarity with AWS, MLflow, CI/CD.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
     "PyTorch",
-    "Graph Neural Networks",
-    "PyTorch Geometric",
-    "SQL"
-  ],
-  "preferred_skills": [
     "Scikit-Learn",
     "Docker",
-    "Bash / Shell"
+    "PostgreSQL"
+  ],
+  "preferred_skills": [
+    "AWS",
+    "MLflow",
+    "CI/CD"
   ]
 }

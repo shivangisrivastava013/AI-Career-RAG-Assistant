@@ -1,20 +1,21 @@
 {
   "job_id": "job_006",
-  "title": "3D Neural Rendering & Spatial AI Engineer",
-  "company": "SpatialVerse Systems",
-  "location": "Austin, TX",
-  "description": "Responsibilities: Implement 3D Gaussian Splatting and neural rendering pipelines for indoor environment reconstruction. Translate Polycam captures into COLMAP camera poses. Qualifications: Python, PyTorch, COLMAP, 3D Gaussian Splatting, OpenCV, CUDA. Preferred: ROS 2 integration.",
-  "source_url": "https://careers.spatialverse.com/jobs/006",
+  "title": "Applied AI Engineer (CognitiveTech)",
+  "company": "CognitiveTech Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
     "PyTorch",
-    "CUDA",
-    "OpenCV",
-    "3D Gaussian Splatting",
-    "COLMAP"
+    "Retrieval-Augmented Generation (RAG)",
+    "FAISS",
+    "FastAPI"
   ],
   "preferred_skills": [
-    "ROS 2",
-    "Docker"
+    "LangChain",
+    "Docker",
+    "Vector Databases"
   ]
 }

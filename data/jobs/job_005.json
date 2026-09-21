@@ -1,20 +1,21 @@
 {
   "job_id": "job_005",
-  "title": "NLP & Generative AI Engineer",
-  "company": "Synthetix AI",
-  "location": "Remote",
-  "description": "Responsibilities: Build abstractive and extractive text summarization engines using HuggingFace Transformers and LLMs. Implement fine-tuning pipelines for domain-specific text generation. Qualifications: Python, PyTorch, Transformers, HuggingFace, FastAPI, REST API. Preferred: LangChain, Vector Databases.",
-  "source_url": "https://careers.synthetix.com/jobs/005",
+  "title": "Machine Learning Engineer (SynthetixAI)",
+  "company": "SynthetixAI Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Machine Learning Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Scikit-Learn. Production experience with Docker, PostgreSQL. Preferred: Familiarity with AWS, MLflow, CI/CD.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
     "PyTorch",
-    "Transformers",
-    "Large Language Models (LLMs)",
-    "FastAPI"
+    "Scikit-Learn",
+    "Docker",
+    "PostgreSQL"
   ],
   "preferred_skills": [
-    "LangChain",
-    "RAG",
-    "Docker"
+    "AWS",
+    "MLflow",
+    "CI/CD"
   ]
 }

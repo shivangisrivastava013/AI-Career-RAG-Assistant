@@ -1,16 +1,21 @@
 {
   "job_id": "job_024",
-  "title": "Deep Learning Engineer - Audio & Speech",
-  "company": "Soundwave AI",
+  "title": "MLOps Engineer (NovaRobotics)",
+  "company": "NovaRobotics Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Deep Learning Engineer - Audio & Speech. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, PyTorch, Transformers. Experience with Audio Processing.",
-  "source_url": "https://careers.example.com/jobs/job_024",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "PyTorch",
-    "Transformers"
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "MLflow"
   ],
   "preferred_skills": [
-    "Audio Processing"
+    "AWS",
+    "PostgreSQL",
+    "Bash / Shell"
   ]
 }

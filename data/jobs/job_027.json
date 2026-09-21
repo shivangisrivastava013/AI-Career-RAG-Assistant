@@ -1,17 +1,21 @@
 {
   "job_id": "job_027",
-  "title": "Junior AI Developer",
-  "company": "LaunchPad AI",
+  "title": "Computer Vision Engineer (ApexVision)",
+  "company": "ApexVision Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Junior AI Developer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, Scikit-Learn, Git / GitHub. Experience with SQL, REST API.",
-  "source_url": "https://careers.example.com/jobs/job_027",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "Scikit-Learn",
-    "Git / GitHub"
+    "C++",
+    "PyTorch",
+    "OpenCV",
+    "YOLO / Computer Vision"
   ],
   "preferred_skills": [
-    "SQL",
-    "REST API"
+    "CUDA",
+    "Segment Anything (SAM)",
+    "Docker"
   ]
 }

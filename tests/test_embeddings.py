@@ -1,5 +1,6 @@
-import pytest
 import numpy as np
+import pytest
+
 from rag_assistant.embeddings import VectorStoreManager
 
 

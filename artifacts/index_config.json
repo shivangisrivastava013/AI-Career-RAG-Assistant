@@ -1,5 +1,9 @@
 {
   "dimension": 384,
-  "total_chunks": 60,
-  "use_faiss": true
+  "encoder_model": "fallback-sha256-hashing",
+  "normalization": "l2",
+  "distance_metric": "inner_product",
+  "total_chunks": 100,
+  "use_faiss": true,
+  "created_at": "2026-09-21T00:20:26.232199"
 }

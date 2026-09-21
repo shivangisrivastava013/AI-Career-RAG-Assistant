@@ -1,5 +1,6 @@
 import re
-from typing import Dict, List, Any
+from typing import Any, Dict, List
+
 from .embeddings import VectorStoreManager
 from .parser import DocumentParser
 
@@ -11,10 +12,32 @@ class CareerRAGMatcher:
     """
 
     CORE_SKILLS_TAXONOMY = [
-        "python", "pytorch", "tensorflow", "rag", "langchain", "faiss", "llm", "llms",
-        "transformers", "nlp", "computer vision", "gnn", "graph neural networks",
-        "ros2", "docker", "cuda", "sql", "postgresql", "fastapi", "rest api",
-        "machine learning", "deep learning", "c++", "git", "wsl2", "scikit-learn"
+        "python",
+        "pytorch",
+        "tensorflow",
+        "rag",
+        "langchain",
+        "faiss",
+        "llm",
+        "llms",
+        "transformers",
+        "nlp",
+        "computer vision",
+        "gnn",
+        "graph neural networks",
+        "ros2",
+        "docker",
+        "cuda",
+        "sql",
+        "postgresql",
+        "fastapi",
+        "rest api",
+        "machine learning",
+        "deep learning",
+        "c++",
+        "git",
+        "wsl2",
+        "scikit-learn",
     ]
 
     def __init__(self, vector_store: VectorStoreManager = None):
@@ -27,7 +50,7 @@ class CareerRAGMatcher:
         text_lower = text.lower()
         found_skills = set()
         for skill in self.CORE_SKILLS_TAXONOMY:
-            pattern = r'\b' + re.escape(skill) + r'\b'
+            pattern = r"\b" + re.escape(skill) + r"\b"
             if re.search(pattern, text_lower):
                 found_skills.add(skill)
         return found_skills
@@ -73,7 +96,7 @@ class CareerRAGMatcher:
             "resume_skills_detected": sorted(list(resume_skills)),
             "jd_skills_detected": sorted(list(jd_skills)),
             "top_relevant_jd_context": [chunk for chunk, score in top_jd_matches],
-            "recommendation": recommendation
+            "recommendation": recommendation,
         }
 
     def _generate_recommendation(self, match_pct: float, missing: List[str]) -> str:

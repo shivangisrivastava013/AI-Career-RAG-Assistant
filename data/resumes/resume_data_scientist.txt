@@ -1,0 +1,4 @@
+David Chen
+Data Scientist
+Statistical modeling expert proficient in Python, Pandas, NumPy, Scikit-Learn, and SQL analytics.
+SKILLS: Python, Scikit-Learn, Pandas, NumPy, SQL, PostgreSQL, AWS, Problem Solving, Communication.

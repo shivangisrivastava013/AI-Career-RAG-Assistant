@@ -1,4 +1,3 @@
-import pytest
 from rag_assistant.skill_extraction import CategorizedSkillExtractor
 
 
@@ -35,7 +34,7 @@ def test_skill_comparison():
         resume_text=resume_text,
         job_required_skills=jd_req,
         job_preferred_skills=["Docker"],
-        job_description_text=jd_text
+        job_description_text=jd_text,
     )
 
     matching_names = [m["skill"] for m in comp["matching_skills"]]

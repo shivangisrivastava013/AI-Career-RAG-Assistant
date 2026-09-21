@@ -1,0 +1,21 @@
+{
+  "job_id": "job_040",
+  "title": "Robotics Engineer (SynthetixAI)",
+  "company": "SynthetixAI Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Robotics Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, C++, ROS 2. Production experience with Gazebo, Docker. Preferred: Familiarity with YOLO / Computer Vision, Zenoh, Linux.",
+  "source_url": null,
+  "synthetic": true,
+  "required_skills": [
+    "Python",
+    "C++",
+    "ROS 2",
+    "Gazebo",
+    "Docker"
+  ],
+  "preferred_skills": [
+    "YOLO / Computer Vision",
+    "Zenoh",
+    "Linux"
+  ]
+}

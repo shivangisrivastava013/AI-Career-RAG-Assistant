@@ -7,6 +7,15 @@
       "LangChain", "Large Language Models (LLMs)", "ROS 2", "Gazebo",
       "YOLO / Computer Vision", "Segment Anything (SAM)", "3D Gaussian Splatting",
       "COLMAP", "Docker", "PostgreSQL", "SQL", "Git / GitHub", "Linux", "FastAPI"
-    ]
+    ],
+    "resume_ml_engineer.txt": ["Python", "PyTorch", "Scikit-Learn", "Docker", "PostgreSQL", "AWS", "MLflow", "CI/CD", "SQL", "Git / GitHub"],
+    "resume_ai_engineer.txt": ["Python", "PyTorch", "Retrieval-Augmented Generation (RAG)", "FAISS", "FastAPI", "LangChain", "Docker", "Vector Databases", "Large Language Models (LLMs)"],
+    "resume_data_scientist.txt": ["Python", "Scikit-Learn", "Pandas", "NumPy", "SQL", "PostgreSQL", "AWS", "Problem Solving", "Communication"],
+    "resume_data_engineer.txt": ["Python", "SQL", "Spark / PySpark", "Airflow", "PostgreSQL", "Kafka", "AWS", "Docker"],
+    "resume_mlops_engineer.txt": ["Python", "Docker", "Kubernetes", "CI/CD", "MLflow", "AWS", "PostgreSQL", "Bash / Shell", "Git / GitHub"],
+    "resume_cv_engineer.txt": ["Python", "C++", "PyTorch", "OpenCV", "YOLO / Computer Vision", "CUDA", "Segment Anything (SAM)", "Docker"],
+    "resume_nlp_engineer.txt": ["Python", "PyTorch", "Transformers", "Large Language Models (LLMs)", "FastAPI", "HuggingFace", "Retrieval-Augmented Generation (RAG)", "LangChain"],
+    "resume_robotics_engineer.txt": ["Python", "C++", "ROS 2", "Gazebo", "Docker", "YOLO / Computer Vision", "Zenoh", "Linux"],
+    "resume_genai_engineer.txt": ["Python", "Large Language Models (LLMs)", "Retrieval-Augmented Generation (RAG)", "FAISS", "LangChain", "Vector Databases", "Transformers", "Docker"]
   }
 }

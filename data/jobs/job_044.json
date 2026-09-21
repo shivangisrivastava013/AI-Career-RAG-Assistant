@@ -1,0 +1,21 @@
+{
+  "job_id": "job_044",
+  "title": "GenAI Engineer (NovaRobotics)",
+  "company": "NovaRobotics Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for GenAI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG). Production experience with FAISS, LangChain. Preferred: Familiarity with Vector Databases, Transformers, Docker.",
+  "source_url": null,
+  "synthetic": true,
+  "required_skills": [
+    "Python",
+    "Large Language Models (LLMs)",
+    "Retrieval-Augmented Generation (RAG)",
+    "FAISS",
+    "LangChain"
+  ],
+  "preferred_skills": [
+    "Vector Databases",
+    "Transformers",
+    "Docker"
+  ]
+}

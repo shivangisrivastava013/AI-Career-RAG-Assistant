@@ -1,18 +1,21 @@
 {
   "job_id": "job_028",
-  "title": "Staff AI Engineer - Enterprise Search",
-  "company": "Apex Search",
+  "title": "Computer Vision Engineer (GraphLabs)",
+  "company": "GraphLabs Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Staff AI Engineer - Enterprise Search. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, RAG, FAISS. Experience with Vector Databases, PostgreSQL, Docker.",
-  "source_url": "https://careers.example.com/jobs/job_028",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "RAG",
-    "FAISS"
+    "C++",
+    "PyTorch",
+    "OpenCV",
+    "YOLO / Computer Vision"
   ],
   "preferred_skills": [
-    "Vector Databases",
-    "PostgreSQL",
+    "CUDA",
+    "Segment Anything (SAM)",
     "Docker"
   ]
 }

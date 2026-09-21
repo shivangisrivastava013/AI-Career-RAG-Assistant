@@ -1,0 +1,4 @@
+Hiroshi Tanaka
+Computer Vision Engineer
+Vision researcher building real-time object detection models using PyTorch, OpenCV, YOLO, and SAM.
+SKILLS: Python, C++, PyTorch, OpenCV, YOLO / Computer Vision, CUDA, Segment Anything (SAM), Docker.

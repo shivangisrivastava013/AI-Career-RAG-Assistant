@@ -1,4 +1,3 @@
-import pytest
 from rag_assistant.recommendation import GroundedRecommendationEngine
 
 
@@ -9,7 +8,7 @@ def test_recommendation_groundedness_schema():
             "chunk_id": "job_001_chunk_0",
             "title": "RAG Engineer",
             "section": "Requirements",
-            "text": "Responsibilities: Build production RAG vector search pipelines with FAISS and PyTorch."
+            "text": "Responsibilities: Build production RAG vector search pipelines with FAISS and PyTorch.",
         }
     ]
     matching_skills = [
@@ -17,15 +16,11 @@ def test_recommendation_groundedness_schema():
             "skill": "PyTorch",
             "category": "ml_frameworks",
             "resume_evidence": "2 years experience with PyTorch.",
-            "job_evidence": "PyTorch required."
+            "job_evidence": "PyTorch required.",
         }
     ]
     missing_required = [
-        {
-            "skill": "FAISS",
-            "category": "genai_technologies",
-            "job_evidence": "FAISS vector search required."
-        }
+        {"skill": "FAISS", "category": "genai_technologies", "job_evidence": "FAISS vector search required."}
     ]
 
     recs = rec_engine.generate_recommendations(
@@ -34,7 +29,7 @@ def test_recommendation_groundedness_schema():
         matching_skills=matching_skills,
         missing_required_skills=missing_required,
         missing_preferred_skills=[],
-        overall_score=85.0
+        overall_score=85.0,
     )
 
     assert "fit_summary" in recs

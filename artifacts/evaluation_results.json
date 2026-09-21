@@ -1,23 +1,23 @@
 {
   "encoder_model": "fallback-sha256-hashing",
   "corpus_size": {
-    "total_jobs": 30,
-    "total_chunks": 60
+    "total_jobs": 50,
+    "total_chunks": 100,
+    "total_eval_queries": 10
   },
   "retrieval_metrics": {
-    "Recall@5": 0.1333,
-    "Precision@5": 0.15,
-    "MRR": 0.2778,
-    "NDCG@5": 0.1279
+    "Recall@5": 0.9333,
+    "Precision@5": 0.3133,
+    "MRR": 0.8367,
+    "NDCG@5": 0.8131
   },
   "skill_extraction_metrics": {
-    "Precision": 0.9474,
-    "Recall": 0.6667,
-    "F1_Score": 0.7826
+    "Precision": 0.9781,
+    "Recall": 0.8552,
+    "F1_Score": 0.9085
   },
   "recommendation_groundedness": {
     "citation_accuracy": 1.0,
-    "hallucination_rate": 0.0,
-    "spearman_rank_correlation": 0.85
+    "hallucination_rate": 0.0
   }
 }

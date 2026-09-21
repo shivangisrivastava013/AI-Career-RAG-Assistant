@@ -1,0 +1,4 @@
+Marcus Johnson
+Data Engineer
+Data infrastructure engineer building distributed ETL pipelines with Spark, Airflow, and PostgreSQL.
+SKILLS: Python, SQL, Spark / PySpark, Airflow, PostgreSQL, Kafka, AWS, Docker.

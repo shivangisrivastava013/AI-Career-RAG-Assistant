@@ -1,17 +1,21 @@
 {
   "job_id": "job_022",
-  "title": "Lead AI Search & Information Retrieval Engineer",
-  "company": "FindIT AI",
+  "title": "MLOps Engineer (ApexVision)",
+  "company": "ApexVision Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Lead AI Search & Information Retrieval Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in RAG, FAISS, Python. Experience with Elasticsearch, Sentence Transformers.",
-  "source_url": "https://careers.example.com/jobs/job_022",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for MLOps Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Docker, Kubernetes. Production experience with CI/CD, MLflow. Preferred: Familiarity with AWS, PostgreSQL, Bash / Shell.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "RAG",
-    "FAISS",
-    "Python"
+    "Python",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "MLflow"
   ],
   "preferred_skills": [
-    "Elasticsearch",
-    "Sentence Transformers"
+    "AWS",
+    "PostgreSQL",
+    "Bash / Shell"
   ]
 }

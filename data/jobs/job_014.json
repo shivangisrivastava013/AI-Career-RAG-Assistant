@@ -1,17 +1,21 @@
 {
   "job_id": "job_014",
-  "title": "Data Engineer - AI Pipelines",
-  "company": "OmniData Solutions",
+  "title": "Data Scientist (NovaRobotics)",
+  "company": "NovaRobotics Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Data Engineer - AI Pipelines. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, SQL, Spark / PySpark. Experience with Airflow, PostgreSQL.",
-  "source_url": "https://careers.example.com/jobs/job_014",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Scientist roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, Scikit-Learn, Pandas. Production experience with NumPy, SQL. Preferred: Familiarity with PostgreSQL, AWS, Problem Solving.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
-    "SQL",
-    "Spark / PySpark"
+    "Scikit-Learn",
+    "Pandas",
+    "NumPy",
+    "SQL"
   ],
   "preferred_skills": [
-    "Airflow",
-    "PostgreSQL"
+    "PostgreSQL",
+    "AWS",
+    "Problem Solving"
   ]
 }

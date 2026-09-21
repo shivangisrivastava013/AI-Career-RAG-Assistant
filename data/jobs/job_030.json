@@ -1,17 +1,21 @@
 {
   "job_id": "job_030",
-  "title": "MLOps Infrastructure Specialist",
-  "company": "CloudDeploy AI",
+  "title": "Computer Vision Engineer (SynthetixAI)",
+  "company": "SynthetixAI Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for MLOps Infrastructure Specialist. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Docker, Kubernetes, CI/CD. Experience with Python, Terraform.",
-  "source_url": "https://careers.example.com/jobs/job_030",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "Docker",
-    "Kubernetes",
-    "CI/CD"
+    "Python",
+    "C++",
+    "PyTorch",
+    "OpenCV",
+    "YOLO / Computer Vision"
   ],
   "preferred_skills": [
-    "Python",
-    "Terraform"
+    "CUDA",
+    "Segment Anything (SAM)",
+    "Docker"
   ]
 }

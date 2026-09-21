@@ -1,0 +1,4 @@
+Elena Rostova
+Applied AI Engineer
+Specialized in building enterprise Retrieval-Augmented Generation (RAG) systems, vector search with FAISS, and LLM orchestration with LangChain and FastAPI.
+SKILLS: Python, PyTorch, Retrieval-Augmented Generation (RAG), FAISS, FastAPI, LangChain, Docker, Vector Databases, Large Language Models (LLMs).

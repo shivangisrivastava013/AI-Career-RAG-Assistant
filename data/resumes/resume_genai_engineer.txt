@@ -1,0 +1,4 @@
+Priya Sharma
+Generative AI Engineer
+Generative AI specialist building LLM applications, vector search architectures, and RAG pipelines.
+SKILLS: Python, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), FAISS, LangChain, Vector Databases, Transformers, Docker.

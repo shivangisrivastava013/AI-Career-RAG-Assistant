@@ -1,8 +1,8 @@
-import json
-import os
 import glob
+import json
 import logging
-from typing import List, Dict, Any
+import os
+from typing import Any, Dict, List
 
 logger = logging.getLogger(__name__)
 
@@ -33,7 +33,7 @@ class JobCorpusIngestor:
             "description": str(data.get("description")),
             "source_url": str(data.get("source_url", "")),
             "required_skills": list(data.get("required_skills", [])),
-            "preferred_skills": list(data.get("preferred_skills", []))
+            "preferred_skills": list(data.get("preferred_skills", [])),
         }
 
     @classmethod

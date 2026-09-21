@@ -1,0 +1,4 @@
+Amina Vance
+NLP Engineer
+Natural Language Processing engineer building Transformer models, text summarization, and HuggingFace pipelines.
+SKILLS: Python, PyTorch, Transformers, Large Language Models (LLMs), FastAPI, HuggingFace, RAG, LangChain.

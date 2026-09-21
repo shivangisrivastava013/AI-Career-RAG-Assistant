@@ -1,0 +1,4 @@
+Liam O'Connor
+Robotics Autonomous Navigation Engineer
+Robotics engineer developing ROS 2 TurtleBot navigation, Gazebo simulations, and C++ perception modules.
+SKILLS: Python, C++, ROS 2, Gazebo, Docker, YOLO / Computer Vision, Zenoh, Linux.

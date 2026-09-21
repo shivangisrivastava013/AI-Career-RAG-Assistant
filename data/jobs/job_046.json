@@ -1,0 +1,21 @@
+{
+  "job_id": "job_046",
+  "title": "Data Analyst (CognitiveTech)",
+  "company": "CognitiveTech Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Data Analyst roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in SQL, Python, Pandas. Production experience with Problem Solving, Communication. Preferred: Familiarity with PostgreSQL, Bash / Shell, Team Collaboration.",
+  "source_url": null,
+  "synthetic": true,
+  "required_skills": [
+    "SQL",
+    "Python",
+    "Pandas",
+    "Problem Solving",
+    "Communication"
+  ],
+  "preferred_skills": [
+    "PostgreSQL",
+    "Bash / Shell",
+    "Team Collaboration"
+  ]
+}

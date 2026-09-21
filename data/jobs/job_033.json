@@ -1,0 +1,21 @@
+{
+  "job_id": "job_033",
+  "title": "NLP Engineer (GraphLabs)",
+  "company": "GraphLabs Systems",
+  "location": "New York, NY / Remote",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for NLP Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Transformers. Production experience with Large Language Models (LLMs), FastAPI. Preferred: Familiarity with HuggingFace, RAG, LangChain.",
+  "source_url": null,
+  "synthetic": true,
+  "required_skills": [
+    "Python",
+    "PyTorch",
+    "Transformers",
+    "Large Language Models (LLMs)",
+    "FastAPI"
+  ],
+  "preferred_skills": [
+    "HuggingFace",
+    "RAG",
+    "LangChain"
+  ]
+}

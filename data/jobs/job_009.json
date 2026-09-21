@@ -1,17 +1,21 @@
 {
   "job_id": "job_009",
-  "title": "ML Engineer - LLM Infrastructure",
-  "company": "DataCore Systems",
+  "title": "Applied AI Engineer (NovaRobotics)",
+  "company": "NovaRobotics Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for ML Engineer - LLM Infrastructure. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in Python, PyTorch, Transformers. Experience with Docker, AWS.",
-  "source_url": "https://careers.example.com/jobs/job_009",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
     "Python",
     "PyTorch",
-    "Transformers"
+    "Retrieval-Augmented Generation (RAG)",
+    "FAISS",
+    "FastAPI"
   ],
   "preferred_skills": [
+    "LangChain",
     "Docker",
-    "AWS"
+    "Vector Databases"
   ]
 }

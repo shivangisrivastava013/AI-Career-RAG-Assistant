@@ -1,16 +1,21 @@
 {
   "job_id": "job_026",
-  "title": "Generative Multimodal AI Engineer",
-  "company": "OmniVision AI",
+  "title": "Computer Vision Engineer (CognitiveTech)",
+  "company": "CognitiveTech Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Generative Multimodal AI Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in PyTorch, Transformers, Segment Anything (SAM). Experience with Diffusion Models.",
-  "source_url": "https://careers.example.com/jobs/job_026",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Computer Vision Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, C++, PyTorch. Production experience with OpenCV, YOLO / Computer Vision. Preferred: Familiarity with CUDA, Segment Anything (SAM), Docker.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
+    "Python",
+    "C++",
     "PyTorch",
-    "Transformers",
-    "Segment Anything (SAM)"
+    "OpenCV",
+    "YOLO / Computer Vision"
   ],
   "preferred_skills": [
-    "Diffusion Models"
+    "CUDA",
+    "Segment Anything (SAM)",
+    "Docker"
   ]
 }

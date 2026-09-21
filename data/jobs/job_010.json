@@ -1,17 +1,21 @@
 {
   "job_id": "job_010",
-  "title": "Robotics Motion Control Software Engineer",
-  "company": "Kinematics Tech",
+  "title": "Applied AI Engineer (SynthetixAI)",
+  "company": "SynthetixAI Systems",
   "location": "New York, NY / Remote",
-  "description": "Responsibilities: Design, evaluate, and scale production systems for Robotics Motion Control Software Engineer. Build robust pipelines and collaborate with cross-functional AI teams. Qualifications: Proficiency in C++, Python, ROS 2. Experience with Gazebo, Control Systems.",
-  "source_url": "https://careers.example.com/jobs/job_010",
+  "description": "Responsibilities: Design, evaluate, and deploy scalable solutions for Applied AI Engineer roles. Build production pipelines, optimize latency, and collaborate across engineering teams. Qualifications: Strong proficiency in Python, PyTorch, Retrieval-Augmented Generation (RAG). Production experience with FAISS, FastAPI. Preferred: Familiarity with LangChain, Docker, Vector Databases.",
+  "source_url": null,
+  "synthetic": true,
   "required_skills": [
-    "C++",
     "Python",
-    "ROS 2"
+    "PyTorch",
+    "Retrieval-Augmented Generation (RAG)",
+    "FAISS",
+    "FastAPI"
   ],
   "preferred_skills": [
-    "Gazebo",
-    "Control Systems"
+    "LangChain",
+    "Docker",
+    "Vector Databases"
   ]
 }
