@@ -257,26 +257,18 @@ def main():
         jobs_dir = st.text_input("Job Directory Path", value="data/jobs")
         if st.button("🚀 Rebuild FAISS Vector Index Now"):
             with st.spinner("Chunking & Embedding Job Corpus..."):
-                jobs = JobCorpusIngestor.load_corpus(jobs_dir)
-                if not jobs:
-                    st.error(f"No job JSON files found in {jobs_dir}")
-                else:
-                    chunker = SectionAwareChunker()
-                    all_chunks = []
-                    for j in jobs:
-                        all_chunks.extend(chunker.chunk_job_description(j))
+                try:
+                    from rag_assistant.index_jobs import build_index
 
-                    texts = [c["text"] for c in all_chunks]
-                    embeddings = embedder.encode(texts)
-
-                    new_vstore = PersistentFAISSVectorStore(
-                        dimension=embeddings.shape[1] if len(embeddings) > 0 else 384, encoder_model=embedder.model_used
+                    vstore_built = build_index(
+                        input_dir=jobs_dir, output_dir=artifacts_dir, allow_fallback=allow_fallback
                     )
-                    new_vstore.add_chunks(all_chunks, embeddings)
-                    new_vstore.save(artifacts_dir)
-
-                    st.success(f"Successfully indexed {len(jobs)} jobs ({len(all_chunks)} chunks) into FAISS!")
+                    st.success(
+                        f"Successfully indexed job corpus into FAISS using encoder `{vstore_built.encoder_model}`!"
+                    )
                     st.rerun()
+                except Exception as e:
+                    st.error(f"Rebuild failed: {e}")
 
         st.divider()
         with st.expander("📝 Add Custom Job Description (Paste & Index Immediately)", expanded=False):
@@ -313,22 +305,12 @@ def main():
 
                         st.success(f"Saved custom job file to `{out_path}`!")
                         with st.spinner("Rebuilding FAISS index with new job..."):
-                            jobs = JobCorpusIngestor.load_corpus(jobs_dir)
-                            chunker = SectionAwareChunker()
-                            all_chunks = []
-                            for j in jobs:
-                                all_chunks.extend(chunker.chunk_job_description(j))
-                            texts = [c["text"] for c in all_chunks]
-                            embeddings = embedder.encode(texts)
-                            new_vstore = PersistentFAISSVectorStore(
-                                dimension=embeddings.shape[1] if len(embeddings) > 0 else 384,
-                                encoder_model=embedder.model_used,
+                            from rag_assistant.index_jobs import build_index
+
+                            vstore_built = build_index(
+                                input_dir=jobs_dir, output_dir=artifacts_dir, allow_fallback=allow_fallback
                             )
-                            new_vstore.add_chunks(all_chunks, embeddings)
-                            new_vstore.save(artifacts_dir)
-                            st.success(
-                                f"FAISS index updated! Total indexed jobs: {len(jobs)} ({len(all_chunks)} chunks)."
-                            )
+                            st.success(f"FAISS index updated! Using encoder `{vstore_built.encoder_model}`.")
                             st.rerun()
 
     # TAB 3: SKILL GAP MATRIX

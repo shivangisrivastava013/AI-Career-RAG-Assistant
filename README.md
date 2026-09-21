@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 ### 2. Generate Sample Corpus & Index FAISS Vector Store
 ```bash
-# Generate 30 sample job descriptions and anonymized resumes
+# Generate 50 synthetic job descriptions and 10 candidate profiles
 python generate_jobs.py
 python generate_resumes.py
 
@@ -140,7 +140,7 @@ Access the application at `http://localhost:8501`.
 AI-Career-RAG-Assistant/
 ├── app.py                      # Interactive Streamlit Web Application
 ├── evaluate.py                 # Automated benchmark evaluation script
-├── generate_jobs.py            # Corpus generator for 30+ job JSON records
+├── generate_jobs.py            # Corpus generator for 50 synthetic job records
 ├── generate_resumes.py          # Sample candidate resume generator (.pdf, .docx, .txt)
 ├── pyproject.toml              # Ruff, Black, Pytest, MyPy quality configuration
 ├── requirements.txt            # Production python dependencies
