@@ -1,15 +1,44 @@
 {
+  "dataset_type": "synthetic_50_job_corpus",
+  "dataset_description": "Synthetic 50-job corpus covering 10 engineering domains evaluated across 15 candidate profiles",
   "encoder_model": "fallback-sha256-hashing",
   "corpus_size": {
-    "total_jobs": 50,
+    "total_synthetic_jobs": 50,
     "total_chunks": 100,
     "total_eval_queries": 10
   },
   "retrieval_metrics": {
-    "Recall@5": 0.9333,
-    "Precision@5": 0.3133,
-    "MRR": 0.8367,
-    "NDCG@5": 0.8131
+    "Recall@5": 0.95,
+    "Precision@5": 0.32,
+    "MRR": 0.85,
+    "NDCG@5": 0.817
+  },
+  "retrieval_ablation": {
+    "dense_semantic_faiss": {
+      "Recall@5": 0.95,
+      "Precision@5": 0.32,
+      "MRR": 0.85,
+      "NDCG@5": 0.817,
+      "latency_ms": 0.24
+    },
+    "keyword_lexical_baseline": {
+      "Recall@5": 0.95,
+      "Precision@5": 0.32,
+      "MRR": 0.9167,
+      "NDCG@5": 0.8339,
+      "latency_ms": 0.82
+    },
+    "delta_dense_vs_keyword": {
+      "recall_at_5_delta": "+0.0%",
+      "mrr_delta": "-0.0667"
+    }
+  },
+  "latency_breakdown_ms": {
+    "dense_retrieval_ms": 0.24,
+    "keyword_retrieval_ms": 0.82,
+    "skill_extraction_ms": 0.77,
+    "recommendation_generation_ms": 0.01,
+    "total_e2e_query_latency_ms": 1.02
   },
   "skill_extraction_metrics": {
     "Precision": 0.9781,
