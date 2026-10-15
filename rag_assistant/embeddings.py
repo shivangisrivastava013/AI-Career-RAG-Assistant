@@ -88,6 +88,19 @@ class VectorStoreManager:
 
         return np.array(embeddings, dtype=np.float32)
 
+    def retrieve_top_k(self, query: str, chunks: List[str], k: int = 3) -> List[tuple]:
+        """
+        Retrieves top-k most similar text chunks for a query string.
+        Returns list of (chunk_text, similarity_score).
+        """
+        if not chunks:
+            return []
+        query_vec = self.encode([query])[0]
+        chunk_vecs = self.encode(chunks)
+        scores = [self.cosine_similarity(query_vec, cv) for cv in chunk_vecs]
+        ranked = sorted(zip(chunks, scores), key=lambda x: x[1], reverse=True)
+        return ranked[:k]
+
     @staticmethod
     def cosine_similarity(vec1: np.ndarray, vec2: np.ndarray) -> float:
         """

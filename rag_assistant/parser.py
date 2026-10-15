@@ -24,12 +24,51 @@ class DocumentParser:
         return text.strip()
 
     @classmethod
+    def load_file(cls, file_path: str) -> str:
+        """
+        Loads document file and returns cleaned plain text.
+        Raises ValueError if empty or malformed.
+        """
+        parsed = cls.parse_file(file_path)
+        return parsed["clean_text"]
+
+    @staticmethod
+    def chunk_text(text: str, chunk_size: int = 128, chunk_overlap: int = 16) -> List[str]:
+        """
+        Splits clean text into sliding window chunks.
+        """
+        if not text or not text.strip():
+            return []
+        words = text.split()
+        if not words:
+            return []
+        chunks = []
+        current: List[str] = []
+        curr_len = 0
+        for w in words:
+            current.append(w)
+            curr_len += len(w) + 1
+            if curr_len >= chunk_size:
+                chunks.append(" ".join(current))
+                overlap_count = max(1, chunk_overlap // 8)
+                current = current[-overlap_count:]
+                curr_len = sum(len(x) + 1 for x in current)
+        if current:
+            chunks.append(" ".join(current))
+        return chunks
+
+    @classmethod
     def parse_file(cls, file_path: str) -> Dict[str, Any]:
         """
         Parses document file by extension and returns structured text payload.
+        Raises ValueError for empty files, unreadable content, or malformed formats.
         """
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"Target document not found at: {file_path}")
+
+        file_size = os.path.getsize(file_path)
+        if file_size == 0:
+            raise ValueError(f"Uploaded resume document '{os.path.basename(file_path)}' is empty (0 bytes).")
 
         ext = os.path.splitext(file_path)[1].lower()
 
@@ -43,13 +82,19 @@ class DocumentParser:
         else:
             raise ValueError(f"Unsupported document format '{ext}'. Supported formats: .pdf, .docx, .txt")
 
+        clean_text = cls.clean_text(raw_text)
+        if not clean_text:
+            raise ValueError(
+                f"Uploaded resume document '{os.path.basename(file_path)}' contains no extractable text."
+            )
+
         sections = cls.extract_sections(raw_text)
 
         return {
             "file_name": os.path.basename(file_path),
             "file_path": file_path,
             "raw_text": raw_text,
-            "clean_text": cls.clean_text(raw_text),
+            "clean_text": clean_text,
             "sections": sections,
         }
 
@@ -57,6 +102,7 @@ class DocumentParser:
     def _parse_pdf(file_path: str) -> str:
         """
         Extracts plain text from PDF using pypdf.
+        Raises ValueError if PDF is corrupted or unreadable.
         """
         try:
             from pypdf import PdfReader
@@ -66,25 +112,40 @@ class DocumentParser:
             for i, page in enumerate(reader.pages):
                 text = page.extract_text() or ""
                 pages_text.append(text)
-            return "\n".join(pages_text)
+            extracted = "\n".join(pages_text).strip()
+            if not extracted:
+                raise ValueError(
+                    f"Uploaded PDF document '{os.path.basename(file_path)}' contains no extractable text."
+                )
+            return extracted
+        except ValueError:
+            raise
         except Exception as e:
             logger.error(f"Error parsing PDF '{file_path}': {e}")
-            raise RuntimeError(f"Could not extract text from PDF: {e}") from e
+            raise ValueError(f"Malformed or unreadable PDF document '{os.path.basename(file_path)}': {e}") from e
 
     @staticmethod
     def _parse_docx(file_path: str) -> str:
         """
         Extracts plain text from DOCX using python-docx.
+        Raises ValueError if DOCX is corrupted or unreadable.
         """
         try:
             import docx
 
             doc = docx.Document(file_path)
             full_text = [p.text for p in doc.paragraphs if p.text.strip()]
-            return "\n".join(full_text)
+            extracted = "\n".join(full_text).strip()
+            if not extracted:
+                raise ValueError(
+                    f"Uploaded DOCX document '{os.path.basename(file_path)}' contains no extractable text."
+                )
+            return extracted
+        except ValueError:
+            raise
         except Exception as e:
             logger.error(f"Error parsing DOCX '{file_path}': {e}")
-            raise RuntimeError(f"Could not extract text from DOCX: {e}") from e
+            raise ValueError(f"Malformed or unreadable DOCX document '{os.path.basename(file_path)}': {e}") from e
 
     @classmethod
     def extract_sections(cls, text: str) -> Dict[str, str]:

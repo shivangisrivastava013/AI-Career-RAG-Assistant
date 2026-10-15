@@ -62,6 +62,11 @@ class CareerRAGMatcher:
         resume_clean = DocumentParser.clean_text(resume_text)
         jd_clean = DocumentParser.clean_text(job_description_text)
 
+        if not resume_clean:
+            raise ValueError("Candidate resume text is empty or contains no extractable text.")
+        if not jd_clean:
+            raise ValueError("Target job description text is empty or contains no extractable text.")
+
         # 1. Semantic Embedding Similarity Score
         resume_vec = self.vector_store.encode([resume_clean])[0]
         jd_vec = self.vector_store.encode([jd_clean])[0]
